@@ -1,0 +1,1121 @@
+/* =========================================
+   Global & Top Bar CSS Start
+   ========================================= */
+body, html {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    width: 100%;
+    overflow-x: clip;
+}
+
+/* Fix AOS horizontal scroll issue without breaking sticky navbar */
+section, footer, .top-bar {
+    overflow-x: clip;
+}
+
+* {
+    font-family: 'Mukta', sans-serif;
+}
+
+.mukta-extralight {
+    font-family: "Mukta", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.mukta-light {
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.mukta-regular {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mukta-medium {
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.mukta-semibold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.mukta-bold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.mukta-extrabold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+    position: relative;
+    overflow: hidden;
+    background: #ff3c00;
+    /* background:linear-gradient(135deg,#1a0500,#ff3c00,#1a0500); */
+    padding: 5px 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* GLOW BACKGROUND */
+.top-bar::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(80px);
+    animation: glowMove 6s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+/* TEXT */
+.top-bar span {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 15px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(255, 60, 0, 0.8);
+
+    animation:
+        floating 3s ease-in-out infinite,
+        pulseGlow 2s ease-in-out infinite;
+}
+
+/* FLOAT EFFECT */
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* GLOW PULSE */
+@keyframes pulseGlow {
+    0% {
+        text-shadow:
+            0 0 5px rgba(255, 255, 255, 0.4),
+            0 0 15px rgba(255, 60, 0, 0.5);
+    }
+
+    50% {
+        text-shadow:
+            0 0 10px rgba(255, 255, 255, 1),
+            0 0 25px rgba(255, 60, 0, 1),
+            0 0 40px rgba(255, 60, 0, 1);
+    }
+
+    100% {
+        text-shadow:
+            0 0 5px rgba(255, 255, 255, 0.4),
+            0 0 15px rgba(255, 60, 0, 0.5);
+    }
+}
+
+/* BACKGROUND GLOW MOVE */
+@keyframes glowMove {
+
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px) {
+
+    .top-bar span {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+}
+
+/* .top-bar {
+    background-color: #ff3c00;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+} */
+/* =========================================
+   Global & Top Bar CSS End
+   ========================================= */
+
+/* =========================================
+   Navbar Section CSS Start
+   ========================================= */
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 40px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff3c00;
+}
+
+.nav-links a.active {
+    color: #ff3c00;
+}
+
+.mobile-nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.mobile-nav-links a.active {
+    color: #ff3c00;
+}
+
+/* =========================================
+   Navbar Section CSS End
+   ========================================= */
+
+/* =========================================
+   Banner Section CSS Start
+   ========================================= */
+.banner-section {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #111 0%, #000 70%);
+}
+
+.central-image-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.deity-placeholder {
+    width: 300px;
+    height: 400px;
+    background: radial-gradient(circle, #1a1a2e 0%, #000000 80%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin: 0 auto;
+}
+
+.deity-icon {
+    font-size: 100px;
+    color: #333;
+}
+
+.bg-text {
+    position: absolute;
+    font-size: 7vw;
+    color: rgba(255, 255, 255, 0.05);
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bg-text-top-left {
+    top: 20%;
+    left: 23%;
+    /* transform: rotate(-5deg); */
+}
+
+.bg-text-top-right {
+    top: 20%;
+    right: 23%;
+}
+
+.bg-text-bottom-left {
+    bottom: 20%;
+    left: 13%;
+    /* transform: rotate(-10deg); */
+}
+
+.bg-text-bottom-right {
+    bottom: 20%;
+    right: 23%;
+    font-size: 7vw;
+}
+
+/* =========================================
+   Banner Section CSS End
+   ========================================= */
+
+/* =========================================
+   About Section CSS Start
+   ========================================= */
+.about-section {
+    background-color: #000;
+    padding: 50px 0;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+
+.about-section .about-text-col {
+    padding-right: 40px;
+}
+
+.about-section .about-subtitle {
+    color: #e0e0e0;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.about-section .about-title {
+    color: #d4af37;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.about-section .about-description {
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.about-section .about-img-col {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .about-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.about-section .about-image-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -10%;
+    width: 120%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+.about-section .about-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* =========================================
+   About Section CSS End
+   ========================================= */
+
+/* ===================================
+   TANTRA MANTRA YANTRA SECTION
+=================================== */
+
+.tmy-section {
+    background: #000;
+    padding: 50px 0;
+    overflow: hidden;
+    /* font-family:'Noto Serif Devanagari', serif; */
+}
+
+/* ================= HEADING ================= */
+
+.tmy-section .tmy-heading {
+    margin-bottom: 60px;
+}
+
+.tmy-section .tmy-heading h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.tmy-section .tmy-heading h2 span {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 70px;
+    vertical-align: bottom;
+}
+
+/* ORANGE DOT */
+
+
+
+/* SUBTEXT */
+
+.tmy-section .tmy-heading p {
+    color: #d2d2d2;
+    font-size: 22px;
+    margin: 0;
+}
+
+/* ================= ROW ================= */
+
+.tmy-section .tmy-row {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* ================= CONTENT ================= */
+
+
+
+.tmy-section .tmy-content-box h3 {
+    margin-bottom: 20px;
+}
+
+.tmy-section .tmy-content-box h3 img {
+    width: 10% !important;
+}
+
+
+
+
+/* TEXT */
+
+.tmy-section .tmy-content-box p {
+    color: #f0f0f0;
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ================= CIRCLE ================= */
+
+.tmy-section .tmy-circle {
+    min-width: 180px;
+    min-height: 180px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #660F00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* IMAGE */
+
+.tmy-section .tmy-circle img {
+    transition: 0.5s ease;
+}
+
+/* HOVER */
+
+.tmy-section .tmy-circle:hover img {
+    transform: scale(1.08) rotate(3deg);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px) {
+
+    .tmy-section {
+        padding: 70px 0;
+    }
+
+    .tmy-section .tmy-heading {
+        margin-bottom: 70px;
+    }
+
+    .tmy-section .tmy-heading h2 {
+        font-size: 55px;
+    }
+
+    .tmy-section .tmy-heading p {
+        font-size: 18px;
+    }
+
+
+
+
+    .tmy-section .tmy-content-box h3 {
+        text-align: left;
+    }
+
+    .tmy-section .tmy-content-box p {
+        font-size: 17px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+
+
+}
+
+@media(max-width:767px) {
+
+    .tmy-section .tmy-heading h2 {
+        font-size: 38px;
+    }
+
+    .tmy-section .tmy-heading p {
+        font-size: 15px;
+    }
+
+    .tmy-section .tmy-content-box h3 {
+        text-align: left;
+    }
+
+    .tmy-section .tmy-content-box p {
+        font-size: 17px;
+    }
+
+    .tmy-section .tmy-circle {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+}
+
+/* =========================================
+   DONATION SECTION CSS
+========================================= */
+
+.donation-section {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    background: url('../images/footer-banner.jpg') center center/cover no-repeat;
+    /* font-family:'Noto Sans Devanagari', sans-serif; */
+}
+
+/* DARK OVERLAY */
+
+.donation-section .donation-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* ================= CONTENT ================= */
+
+.donation-section .donation-content {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 55px;
+}
+
+/* SUBTITLE */
+
+.donation-section .donation-subtitle {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+/* TITLE */
+
+.donation-section .donation-title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+
+/* ================= FORM ================= */
+
+.donation-section .donation-form-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+/* FORM */
+
+.donation-section .donation-form {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 60px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+/* INPUT */
+
+.donation-section .donation-input {
+    flex: 1;
+    height: 60px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    font-size: 24px;
+    padding: 0 35px;
+    font-weight: 500;
+}
+
+/* PLACEHOLDER */
+
+.donation-section .donation-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* BUTTON */
+
+.donation-section .donation-btn {
+    width: 160px;
+    height: 60px;
+    border: none;
+    background: #c79a63;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.4s ease;
+    border-radius: 60px;
+}
+
+/* HOVER */
+
+.donation-section .donation-btn:hover {
+    background: #b3834c;
+}
+
+/* ================= TEXT ================= */
+
+.donation-section .donation-bottom-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    margin: auto;
+}
+
+.donation-section .donation-bottom-content p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px) {
+
+    .donation-section {
+        padding: 90px 0;
+    }
+
+    .donation-section .donation-title {
+        font-size: 65px;
+    }
+
+
+
+    .donation-section .donation-input {
+        width: 100%;
+        height: 70px;
+        border-radius: 50px;
+        font-size: 22px;
+    }
+
+    .donation-section .donation-btn {
+        width: 160px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    .donation-section .donation-bottom-content p {
+        font-size: 22px;
+    }
+
+}
+
+@media(max-width:767px) {
+.banner-section{
+        min-height: 60vw;
+    }
+    .tiny-row-first{
+        flex-direction: column-reverse;
+    }
+    .donation-section {
+        padding: 70px 0;
+    }
+
+    .donation-section .donation-subtitle {
+        font-size: 15px;
+    }
+
+    .donation-section .donation-title {
+        font-size: 42px;
+    }
+
+    .donation-section .donation-input {
+        font-size: 18px;
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .donation-section .donation-btn {
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .donation-section .donation-bottom-content p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+}
+
+.faq-section .accordion-button::after {
+    display: none;
+}
+
+#faqAccordion {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+
+}
+
+/* CUSTOM SCROLLBAR */
+#faqAccordion::-webkit-scrollbar {
+    width: 5px;
+}
+
+#faqAccordion::-webkit-scrollbar-track {
+    background: #0B0B0B;
+}
+
+#faqAccordion::-webkit-scrollbar-thumb {
+    background: #474747;
+    border-radius: 20px;
+}
+
+.faq-section .accordion-button {
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: 400;
+    ;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    color: #d4a15d;
+    transition: 3s ease-in-out;
+}
+
+.faq-section .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq-section .accordion-item {
+    --bs-accordion-border-color: transparent;
+}
+
+.faq-section .accordion-header {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.faq-section .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.faq-section .accordion-body p {
+    color: #fff;
+}
+
+.faq-section .bg-dark {
+    background: #0d0d0d !important;
+}
+
+.faq-section .faq-icon {
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.faq-section .accordion-button:not(.collapsed) .faq-icon {
+    transform: rotate(180deg);
+    color: #d4a15d;
+
+}
+
+/* OPEN TITLE COLOR */
+.faq-section .accordion-button:not(.collapsed) {
+    color: #d4a15d !important;
+    background-color: #000 !important;
+}
+
+/* ICON COLOR */
+.faq-section .accordion-button:not(.collapsed) .faq-icon {
+    color: #d4a15d !important;
+    transform: rotate(180deg);
+}
+
+/* CLOSED STATE */
+.faq-section .accordion-button.collapsed {
+    color: #fff !important;
+    
+}
+
+/* REMOVE BOOTSTRAP BG */
+.faq-section .accordion-button {
+    background-color: #000 !important;
+    /* transition: 3s ease ease-in-out; */
+}
+
+
+/* HOVER TITLE COLOR */
+.faq-section .accordion-button:hover {
+    color: #d4a15d !important;
+    /* transition: 3s ease ease-in-out; */
+}
+
+
+
+
+@media(max-width:767px) {
+    .tmy-section .tmy-row {
+        flex-wrap: wrap;
+
+    }
+
+
+    .faq-section .accordion-button {
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 20px 0;
+    }
+
+    .faq-section .bg-dark {
+        padding: 20px !important;
+    }
+}
+
+/* =========================
+       FOOTER
+    ========================== */
+
+.kali-footer {
+    background: #f52700;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px; /* Prevent overlap with bottom bar */
+}
+
+/* TOP BLACK AREA */
+.footer-top-strip {
+    height: 90px;
+    background: #000;
+}
+
+.kali-footer .container {
+    padding-top: 60px;
+    /* padding-bottom: 60px; */
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+       LOGO
+    ========================== */
+
+.footer-logo-wrap {
+    gap: 20px;
+}
+
+.footer-logo-icon {
+    color: #fff;
+    font-size: 90px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.footer-logo-text span {
+    display: block;
+    color: #fff;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 0.9;
+}
+
+/* =========================
+       CONTACT
+    ========================== */
+
+.footer-contact p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* =========================
+       LINKS
+    ========================== */
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    opacity: .7;
+}
+
+/* =========================
+       TRISHUL
+    ========================== */
+
+.footer-trishul {
+    max-height: 500px;
+    object-fit: contain;
+    margin-top: -160px;
+}
+
+/* =========================
+       COPYRIGHT
+    ========================== */
+
+.footer-bottom {
+    background: #c91f0096;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute; /* Changed from fixed to avoid mobile overlap */
+    bottom: 0;
+    width: 100%;
+}
+
+/* =========================
+       RESPONSIVE
+    ========================== */
+
+@media (max-width: 991px) {
+
+    .footer-logo-wrap {
+        justify-content: center;
+    }
+
+    .footer-logo-text span {
+        font-size: 48px;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-contact p {
+        font-size: 16px;
+    }
+
+    .footer-contact a {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+
+    .footer-trishul {
+        margin-top: -95px;
+        max-height: 320px;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .footer-top-strip {
+        height: 60px;
+    }
+
+    .footer-logo-wrap {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo-icon {
+        font-size: 70px;
+    }
+
+    .footer-logo-text span {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .footer-contact p {
+        font-size: 18px;
+    }
+
+    .footer-contact a {
+        font-size: 18px;
+        word-break: break-word;
+    }
+
+    .footer-links a {
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 15px;
+        line-height: 1.5;
+        position: absolute;
+    }
+}
+
+/* =========================================
+   Preloader CSS Start
+   ========================================= */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Pure black */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loader-logo-wrapper {
+    position: relative;
+    width: 180px;
+    height: auto;
+    opacity: 0;
+    animation: sadhanaFade 2.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loader-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 0 20px rgba(255, 60, 0, 0.3)); /* Subtle glow */
+}
+
+@keyframes sadhanaFade {
+    0% {
+        opacity: 0.2;
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.02);
+        filter: drop-shadow(0 0 30px rgba(255, 60, 0, 0.6));
+    }
+    100% {
+        opacity: 0.2;
+        transform: scale(0.95);
+    }
+}
+/* =========================================
+   Preloader CSS End
+   ========================================= */
+
+   .logo-placeholder img{
+    width: 60%;
+
+   }

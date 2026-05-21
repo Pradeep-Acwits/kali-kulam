@@ -1,0 +1,68 @@
+/* =========================================
+   Banner Section Responsive CSS Start
+   ========================================= */
+@media (max-width: 768px) {
+    .banner-section .bg-text {
+        font-size: 15vw;
+    }
+    .banner-section .deity-placeholder {
+        width: 250px;
+        height: 300px;
+    }
+    
+}
+/* =========================================
+   Banner Section Responsive CSS End
+   ========================================= */
+
+/* =========================================
+   About Section Responsive CSS Start
+   ========================================= */
+@media (max-width: 991px) {
+    .about-section .about-text-col {
+        padding-right: 15px;
+        margin-bottom: 40px;
+    }
+
+    .about-section .about-title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-section .about-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .about-section .about-subtitle {
+        font-size: 18px;
+    }
+
+    .about-section .about-description {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .about-section .about-img-col {
+        margin-top: 30px;
+    }
+
+    .about-section .about-image-wrapper::after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section .about-title {
+        font-size: 28px;
+    }
+}
+/* =========================================
+   About Section Responsive CSS End
+   ========================================= */

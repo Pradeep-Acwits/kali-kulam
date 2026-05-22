@@ -2,248 +2,247 @@
 <html lang="hi">
 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>काली कुलम -परिचय</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>काली कुलम -परिचय</title>
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reponsive.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <style>
-        /* DESKTOP MENU */
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/reponsive.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<style>
+    /* DESKTOP MENU */
+    .desktop-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .desktop-menu .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+        width: 35%;
+    }
+
+    .desktop-menu .nav-links.left-links {
+        justify-content: flex-end;
+    }
+
+    .desktop-menu .nav-links.right-links {
+        justify-content: flex-start;
+    }
+
+    .desktop-menu .nav-links a {
+        color: #d8d8d8;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        transition: 0.3s ease;
+        position: relative;
+    }
+
+    .desktop-menu .nav-links a:focus-visible {
+        outline: none;
+        outline-offset: none;
+    }
+
+    .desktop-menu .nav-links a:hover,
+    .desktop-menu .nav-links a.active {
+        color: #F42903;
+    }
+
+
+
+    .desktop-menu .nav-links a:hover::after,
+    .desktop-menu .nav-links a.active::after {
+        width: 100%;
+    }
+
+    /* CENTER LOGO */
+    .navbar-logo {
+        width: 30%;
+        text-align: center;
+    }
+
+    .navbar-logo img {
+        width: 130px;
+    }
+
+    /* ================= MOBILE ================= */
+    .mobile-navbar {
+        display: none;
+    }
+
+    .mobile-navbar .mobile-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-navbar .navbar-logo img {
+        width: 120px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        box-shadow: none !important;
+        padding: 0;
+    }
+
+    .custom-toggler {
+        width: 26px;
+        height: 20px;
+        position: relative;
+    }
+
+    .custom-toggler span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        border-radius: 20px;
+    }
+
+    .custom-toggler span:nth-child(1) {
+        top: 0;
+    }
+
+    .custom-toggler span:nth-child(2) {
+        top: 9px;
+    }
+
+    .custom-toggler span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .mobile-menu-links {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .mobile-menu-links a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 0;
+    }
+
+    /* ================= ONLY MOBILE BELOW 576 ================= */
+    @media (max-width:576px) {
+
         .desktop-menu {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .desktop-menu .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 90px;
-            width: 35%;
-        }
-
-        .desktop-menu .nav-links.left-links {
-            justify-content: flex-end;
-        }
-
-        .desktop-menu .nav-links.right-links {
-            justify-content: flex-start;
-        }
-
-        .desktop-menu .nav-links a {
-            color: #d8d8d8;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 500;
-            transition: 0.3s ease;
-            position: relative;
-        }
-
-        .desktop-menu .nav-links a:focus-visible {
-            outline: none;
-            outline-offset: none;
-        }
-
-        .desktop-menu .nav-links a:hover,
-        .desktop-menu .nav-links a.active {
-            color: #F42903;
-        }
-
-
-
-        .desktop-menu .nav-links a:hover::after,
-        .desktop-menu .nav-links a.active::after {
-            width: 100%;
-        }
-
-        /* CENTER LOGO */
-        .navbar-logo {
-            width: 30%;
-            text-align: center;
-        }
-
-        .navbar-logo img {
-            width: 130px;
-        }
-
-        /* ================= MOBILE ================= */
-        .mobile-navbar {
             display: none;
         }
 
-        .mobile-navbar .mobile-top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .mobile-navbar .navbar-logo img {
-            width: 120px;
-        }
-
-        .navbar-toggler {
-            border: none;
-            box-shadow: none !important;
-            padding: 0;
-        }
-
-        .custom-toggler {
-            width: 26px;
-            height: 20px;
-            position: relative;
-        }
-
-        .custom-toggler span {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: #fff;
-            border-radius: 20px;
-        }
-
-        .custom-toggler span:nth-child(1) {
-            top: 0;
-        }
-
-        .custom-toggler span:nth-child(2) {
-            top: 9px;
-        }
-
-        .custom-toggler span:nth-child(3) {
-            bottom: 0;
-        }
-
-        .mobile-menu-links {
-            padding-top: 20px;
-            text-align: center;
-        }
-
-        .mobile-menu-links a {
+        .mobile-navbar {
             display: block;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 500;
-            padding: 8px 0;
         }
+    }
+</style>
+</head>
 
-        /* ================= ONLY MOBILE BELOW 576 ================= */
-        @media (max-width:576px) {
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo-wrapper">
+            <img src="assets/images/loader.png" alt="logo" class="loader-logo">
+        </div>
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span data-aos="fade-up">|| ॐ कृष्ण काली शनैश्चराय स्वाहा ||</span>
 
-            .desktop-menu {
-                display: none;
-            }
+    </div>
+    <!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
+    <nav class="custom-navbar">
 
-            .mobile-navbar {
-                display: block;
-            }
-        }
-    </style>
-    </head>
+        <div class="container px-lg-5 px-3">
 
-    <body>
-        <!-- Preloader -->
-        <div id="preloader">
-            <div class="loader-logo-wrapper">
-                <img src="assets/images/loader.png" alt="logo" class="loader-logo">
+            <!-- ================= DESKTOP NAVBAR ================= -->
+            <div class="desktop-menu">
+
+                <!-- LEFT LINKS -->
+                <div class="nav-links left-links" data-aos="fade-right">
+                    <a href="index.html" class="active">मुखपृष्ठ</a>
+                    <a href="about.html">परिचय</a>
+                </div>
+
+                <!-- CENTER LOGO -->
+                <div class="navbar-logo" data-aos="fade-up">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                    </a>
+                </div>
+
+                <!-- RIGHT LINKS -->
+                <div class="nav-links right-links" data-aos="fade-left">
+                    <a href="donation.html">सहयोग</a>
+                    <a href="services.html">सेवाएँ</a>
+                </div>
+
             </div>
-        </div>
-        <!-- Top Bar -->
-        <div class="top-bar">
-            <span data-aos="fade-up">|| ॐ कृष्ण काली शनैश्चराय स्वाहा ||</span>
 
-        </div>
-        <!-- ================= NAVBAR ================= -->
-        <!-- ================= NAVBAR ================= -->
-        <nav class="custom-navbar">
+            <!-- ================= MOBILE NAVBAR ================= -->
+            <div class="mobile-navbar">
 
-            <div class="container px-lg-5 px-3">
+                <!-- TOP -->
+                <div class="mobile-top">
 
-                <!-- ================= DESKTOP NAVBAR ================= -->
-                <div class="desktop-menu">
-
-                    <!-- LEFT LINKS -->
-                    <div class="nav-links left-links" data-aos="fade-right">
-                        <a href="index.html" class="active">मुखपृष्ठ</a>
-                        <a href="about.html">परिचय</a>
-                    </div>
-
-                    <!-- CENTER LOGO -->
-                    <div class="navbar-logo" data-aos="fade-up">
-                        <a href="index.html">
+                    <!-- LEFT LOGO -->
+                    <div class="navbar-logo text-start">
+                        <a href="#">
                             <img src="assets/images/logo.png" alt="logo" class="img-fluid">
                         </a>
                     </div>
 
-                    <!-- RIGHT LINKS -->
-                    <div class="nav-links right-links" data-aos="fade-left">
-                        <a href="donation.html">सहयोग</a>
-                        <a href="services.html">सेवाएँ</a>
-                    </div>
+                    <!-- RIGHT TOGGLE -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+
+                        <div class="custom-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </button>
 
                 </div>
 
-                <!-- ================= MOBILE NAVBAR ================= -->
-                <div class="mobile-navbar">
+                <!-- MOBILE MENU -->
+                <div class="collapse" id="mobileMenu">
 
-                    <!-- TOP -->
-                    <div class="mobile-top">
-
-                        <!-- LEFT LOGO -->
-                        <div class="navbar-logo text-start">
-                            <a href="#">
-                                <img src="assets/images/logo.png" alt="logo" class="img-fluid">
-                            </a>
-                        </div>
-
-                        <!-- RIGHT TOGGLE -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#mobileMenu">
-
-                            <div class="custom-toggler">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                        </button>
-
-                    </div>
-
-                    <!-- MOBILE MENU -->
-                    <div class="collapse" id="mobileMenu">
-
-                        <div class="mobile-menu-links">
-                            <a href="#">मुखपृष्ठ</a>
-                            <a href="#">परिचय</a>
-                            <a href="#">सहयोग</a>
-                            <a href="#">सेवाएँ</a>
-                        </div>
-
+                    <div class="mobile-menu-links">
+                        <a href="#">मुखपृष्ठ</a>
+                        <a href="#">परिचय</a>
+                        <a href="#">सहयोग</a>
+                        <a href="#">सेवाएँ</a>
                     </div>
 
                 </div>
 
             </div>
 
-        </nav>
+        </div>
+
+    </nav>
 
 
- <section class="donation-section">
+    <section class="donation-section">
 
         <!-- Overlay -->
         <div class="donation-overlay"></div>
@@ -268,7 +267,7 @@
 
                 <form class="donation-form">
 
-                    <input type="text" placeholder="धाराशि (₹)" class="form-control donation-input">
+                    <input type="text" placeholder="धनराशि (₹)" class="form-control donation-input">
 
                     <button type="submit" class="donation-btn">
                         दान करें
@@ -283,9 +282,8 @@
                 data-aos-delay="200">
 
                 <p>
-                    दान केवल धन नहीं - यह आपकी श्रद्धा का प्रतीक है। जब आप काली कुलम में
-                    अर्पण करते हैं, तो आप केवल एक संस्था को नहीं, बल्कि एक जीवंत साधना
-                    परंपरा को जीवित रखते हैं।
+                    दान केवल धन नहीं - यह आपकी श्रद्धा का प्रतीक है। जब आप काली कुलम में अर्पण करते हैं, तो आप केवल एक
+                    संस्था को नहीं, बल्कि एक जीवंत साधना परंपरा को जीवित रखते हैं।
                 </p>
 
             </div>
@@ -294,250 +292,393 @@
 
     </section>
 
-        <section class="donate-slider-section ">
-            <div class="container">
-                <div class="row justify-content-center ">
-                    <div class="col-lg-12">
-                        <div class="donate-slider px-lg-5 px-3">
+    <section class="donate-slider-section ">
+        <div class="container-fluid">
+            <div class="row justify-content-center ">
 
-                            <div class="donate-card">
-                                <div class="donate-card-img">
-                                    <img src="assets/images/Donation-image/1.png" alt="donate-image" class="img-fluid">
-                                    <div class="border-card">
-                                        <img src="assets/images/Donation-image/border.png" alt="border"
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="donate-card-text">
-                                    <h3 class="donate-card-title">अंकुश चौधरी</h3>
-                                    <p class="donate-card-location">होशियारपुर</p>
-                                </div>
+                <div class="col-lg-8 col-md-12 text-center mb-lg-5 mb-3 aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="1200">
+                    <h2 class="parichay-title">
+                        <img script="" src="assets/images/Donation-image/heading-image.png" alt="om"
+                            class="img-fluid w-50 about-heading-1 ">
 
-                            </div>
-                            <div class="donate-card">
-                                <div class="donate-card-img">
-                                    <img src="assets/images/Donation-image/2.png" alt="donate-image" class="img-fluid">
-                                    <div class="border-card">
-                                        <img src="assets/images/Donation-image/border.png" alt="border"
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="donate-card-text">
-                                    <h3 class="donate-card-title">अंकुश चौधरी</h3>
-                                    <p class="donate-card-location">होशियारपुर</p>
-                                </div>
-
-                            </div>
-                            <div class="donate-card">
-                                <div class="donate-card-img">
-                                    <img src="assets/images/Donation-image/3.png" alt="donate-image" class="img-fluid">
-                                    <div class="border-card">
-                                        <img src="assets/images/Donation-image/border.png" alt="border"
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="donate-card-text">
-                                    <h3 class="donate-card-title">अंकुश चौधरी</h3>
-                                    <p class="donate-card-location">होशियारपुर</p>
-                                </div>
-
-                            </div>
-                            <div class="donate-card">
-                                <div class="donate-card-img">
-                                    <img src="assets/images/Donation-image/4.png" alt="donate-image" class="img-fluid">
-                                    <div class="border-card">
-                                        <img src="assets/images/Donation-image/border.png" alt="border"
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="donate-card-text">
-                                    <h3 class="donate-card-title">अंकुश चौधरी</h3>
-                                    <p class="donate-card-location">होशियारपुर</p>
-                                </div>
-
-                            </div>
-                            <div class="donate-card">
-                                <div class="donate-card-img">
-                                    <img src="assets/images/Donation-image/5.png" alt="donate-image" class="img-fluid">
-                                    <div class="border-card">
-                                        <img src="assets/images/Donation-image/border.png" alt="border"
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="donate-card-text">
-                                    <h3 class="donate-card-title">अंकुश चौधरी</h3>
-                                    <p class="donate-card-location">होशियारपुर</p>
-                                </div>
-
-                            </div>
-                            <div class="donate-card">
-                                <div class="donate-card-img">
-                                    <img src="assets/images/Donation-image/6.png" alt="donate-image" class="img-fluid">
-                                    <div class="border-card">
-                                        <img src="assets/images/Donation-image/border.png" alt="border"
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="donate-card-text">
-                                    <h3 class="donate-card-title">अंकुश चौधरी</h3>
-                                    <p class="donate-card-location">होशियारपुर</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
+                    </h2>
 
                 </div>
-            </div>
+                <div class="col-lg-12">
+                    <div class="donate-slider px-lg-5 px-3">
 
-
-        </section>
-        <footer class="kali-footer">
-
-            <!-- TOP BLACK STRIP -->
-            <div class="footer-top-strip"></div>
-
-            <!-- MAIN FOOTER -->
-            <div class="container">
-
-                <div class="row align-items-start">
-
-                    <!-- LEFT -->
-                    <div class="col-lg-5 col-md-5 mb-5 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
-
-                        <div class="footer-logo-wrap d-flex align-items-center">
-
-                            <img src="assets/images/footer-logo.png" alt="logo" class="img-fluid w-50">
-                        </div>
-
-                        <!-- ADDRESS -->
-                        <div class="footer-contact mt-5">
-
-                            <p>
-                                पता: F-1/143, ब्लॉक F, सेक्टर 16F,<br>
-                                रोहिणी, दिल्ली - 110089
-                            </p>
-
-                            <a href="mailto:support@kalikulam.org">
-                                support@kalikulam.org
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <!-- CENTER LINKS -->
-                    <div class=" col-lg-4 col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-duration="1200">
-
-                        <div class="row">
-
-                            <div class="col-6">
-
-                                <ul class="footer-links list-unstyled">
-                                    <li><a href="index.html">मुखपृष्ठ</a></li>
-                                    <li><a href="about.html">परिचय</a></li>
-                                    <li><a href="visits.html">दर्शन</a></li>
-                                    <li><a href="services.html">सेवाएँ</a></li>
-                                    <li><a href="research.html">अनुसंधान</a></li>
-                                    <li><a href="discipleship.html">दीक्षा</a></li>
-                                    <li><a href="sankalp.html">संकल्प</a></li>
-                                </ul>
-
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/1.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
                             </div>
-
-                            <div class="col-6">
-
-                                <ul class="footer-links list-unstyled">
-                                    <li><a href="satsang.html">सत्संग</a></li>
-                                    <li><a href="donation.html">सहयोग</a></li>
-                                    <li><a href="faq.html">प्रश्नगण</a></li>
-                                    <li><a href="contact.html">संपर्क</a></li>
-                                </ul>
-
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">जितेंद्रसिंह</h3>
+                                <p class="donate-card-location">चुंदावत</p>
                             </div>
 
                         </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/2.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">अंकुश चौधरी</h3>
+                                <p class="donate-card-location">होशियारपुर</p>
+                            </div>
+
+                        </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/3.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">अंकिता तिवारी</h3>
+                                <p class="donate-card-location">प्रयागराज </p>
+                            </div>
+
+                        </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/4.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">आशीष राजेंद्र</h3>
+                                <p class="donate-card-location">नवसारी</p>
+                            </div>
+
+                        </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/5.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">डॉ. रोहित सोनी</h3>
+                                <p class="donate-card-location">राजस्थान</p>
+                            </div>
+
+                        </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/6.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">जयश्री केशु ओडेद्रा</h3>
+                                <p class="donate-card-location">पोरबंदर</p>
+                            </div>
+
+                        </div>
 
                     </div>
-
-                    <!-- RIGHT IMAGE -->
-                    <div class="col-lg-3 col-md-3 text-center text-md-end" data-aos="fade-left"
-                        data-aos-duration="1200">
-
-                        <img src="assets/images/footer-img.png" alt="Trishul"
-                            class="img-fluid footer-trishul d-none d-md-inline-block">
-
-                    </div>
-
                 </div>
 
             </div>
+        </div>
 
-            <!-- COPYRIGHT -->
-            <div class="footer-bottom">
-                © 2026 Kali Kulam . All rights reserved.
+
+    </section>
+    <section class="donate-slider-section ">
+        <div class="container-fluid">
+            <div class="row justify-content-center ">
+
+
+                <div class="col-lg-12">
+                    <div class="donate-slider-2 px-lg-5 px-3">
+
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/7.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">पवन बजाज</h3>
+                                <p class="donate-card-location">दिल्ली</p>
+                            </div>
+
+                        </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/8.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">पीयूष भाई पटेल</h3>
+                                <p class="donate-card-location">गुजरात</p>
+                            </div>
+
+                        </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/9.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">प्रीत दहिया</h3>
+                                <p class="donate-card-location">दिल्ली</p>
+                            </div>
+
+                        </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/10.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">रमेश कुमार</h3>
+                                <p class="donate-card-location">गोपालगंज</p>
+                            </div>
+
+                        </div>
+                        <div class="donate-card">
+                            <div class="donate-card-img">
+                                <img src="assets/images/Donation-image/11.png" alt="donate-image" class="img-fluid">
+                                <div class="border-card">
+                                    <img src="assets/images/Donation-image/border.png" alt="border" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="donate-card-text">
+                                <h3 class="donate-card-title">शंकर सिंह राठौर</h3>
+                                <p class="donate-card-location">मेवाड़</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <footer class="kali-footer">
+
+        <!-- TOP BLACK STRIP -->
+        <div class="footer-top-strip"></div>
+
+        <!-- MAIN FOOTER -->
+        <div class="container">
+
+            <div class="row align-items-start">
+
+                <!-- LEFT -->
+                <div class="col-lg-5 col-md-5 mb-5 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+
+                    <div class="footer-logo-wrap d-flex align-items-center">
+
+                        <img src="assets/images/footer-logo.png" alt="logo" class="img-fluid w-50">
+                    </div>
+
+                    <!-- ADDRESS -->
+                    <div class="footer-contact mt-5">
+
+                        <p>
+                            पता: F-1/143, ब्लॉक F, सेक्टर 16F,<br>
+                            रोहिणी, दिल्ली - 110089
+                        </p>
+
+                        <a href="mailto:support@kalikulam.org">
+                            support@kalikulam.org
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- CENTER LINKS -->
+                <div class=" col-lg-4 col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-duration="1200">
+
+                    <div class="row">
+
+                        <div class="col-6">
+
+                            <ul class="footer-links list-unstyled">
+                                <li><a href="index.html">मुखपृष्ठ</a></li>
+                                <li><a href="about.html">परिचय</a></li>
+                                <li><a href="visits.html">दर्शन</a></li>
+                                <li><a href="services.html">सेवाएँ</a></li>
+                                <li><a href="research.html">अनुसंधान</a></li>
+                                <li><a href="discipleship.html">दीक्षा</a></li>
+                                <li><a href="sankalp.html">संकल्प</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <ul class="footer-links list-unstyled">
+                                <li><a href="satsang.html">सत्संग</a></li>
+                                <li><a href="donation.html">सहयोग</a></li>
+                                <li><a href="faq.html">प्रश्नगण</a></li>
+                                <li><a href="contact.html">संपर्क</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="col-lg-3 col-md-3 text-center text-md-end" data-aos="fade-left" data-aos-duration="1200">
+
+                    <img src="assets/images/footer-img.png" alt="Trishul"
+                        class="img-fluid footer-trishul d-none d-md-inline-block">
+
+                </div>
+
             </div>
 
-        </footer>
-        <!-- Bootstrap 5 JS Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        </div>
 
-        <!-- Slick Slider -->
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <!-- GSAP / AOS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-        <script src="assets/js/custom.js"></script>
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+            © 2026 Kali Kulam . All rights reserved.
+        </div>
 
-        <script>
-            $(document).ready(function () {
+    </footer>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-                $('.donate-slider').slick({
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    autoplay: true,
-                    autoplaySpeed: 0,
-                    speed: 6000,
-                    cssEase: 'linear',
-                    arrows: false,
-                    dots: false,
-                    pauseOnHover: false,
-                    pauseOnFocus: false,
+    <!-- Slick Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- GSAP / AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
 
-                    responsive: [
-                        {
-                            breakpoint: 1200,
-                            settings: {
-                                slidesToShow: 3
-                            }
-                        },
-                        {
-                            breakpoint: 992,
-                            settings: {
-                                slidesToShow: 2
-                            }
-                        },
-                        {
-                            breakpoint: 576,
-                            settings: {
-                                slidesToShow: 1
-                            }
+    <script>
+        $(document).ready(function () {
+
+            $('.donate-slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 6000,
+                cssEase: 'linear',
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4
                         }
-                    ]
-                });
-
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
             });
-        </script>
+
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('.donate-slider-2').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 6000,
+                cssEase: 'linear',
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                rtl: true,
+
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+
+            $('.donate-slider-2 .slick-track').css(
+                'transform',
+                'translate3d(0, 0, 0)'
+            );
+
+        });
+    </script>
 
 
 
-    </body>
+</body>
 
 </html>

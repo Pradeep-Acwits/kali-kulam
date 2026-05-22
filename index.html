@@ -20,136 +20,137 @@
     <link rel="stylesheet" href="assets/css/reponsive.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <style>
-       /* DESKTOP MENU */
-    .desktop-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .desktop-menu .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 90px;
-        width: 35%;
-    }
-
-    .desktop-menu .nav-links.left-links {
-        justify-content: flex-end;
-    }
-
-    .desktop-menu .nav-links.right-links {
-        justify-content: flex-start;
-    }
-
-    .desktop-menu .nav-links a {
-        color: #d8d8d8;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 500;
-        transition: 0.3s ease;
-        position: relative;
-    }
-      .desktop-menu .nav-links a:focus-visible{
-        outline: none;
-        outline-offset: none;
-      }
-
-    .desktop-menu .nav-links a:hover,
-    .desktop-menu .nav-links a.active {
-        color: #F42903;
-    }
-
-   
-
-    .desktop-menu .nav-links a:hover::after,
-    .desktop-menu .nav-links a.active::after {
-        width: 100%;
-    }
-
-    /* CENTER LOGO */
-    .navbar-logo {
-        width: 30%;
-        text-align: center;
-    }
-
-    .navbar-logo img {
-        width: 130px;
-    }
-
-    /* ================= MOBILE ================= */
-    .mobile-navbar {
-        display: none;
-    }
-
-    .mobile-navbar .mobile-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .mobile-navbar .navbar-logo img {
-        width: 120px;
-    }
-
-    .navbar-toggler {
-        border: none;
-        box-shadow: none !important;
-        padding: 0;
-    }
-
-    .custom-toggler {
-           width: 26px;
-    height: 20px;
-        position: relative;
-    }
-
-    .custom-toggler span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        border-radius: 20px;
-    }
-
-    .custom-toggler span:nth-child(1) {
-        top: 0;
-    }
-
-    .custom-toggler span:nth-child(2) {
-        top: 9px;
-    }
-
-    .custom-toggler span:nth-child(3) {
-        bottom: 0;
-    }
-
-    .mobile-menu-links {
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .mobile-menu-links a {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 8px 0;
-    }
-
-    /* ================= ONLY MOBILE BELOW 576 ================= */
-    @media (max-width:576px) {
-
+        /* DESKTOP MENU */
         .desktop-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .desktop-menu .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 90px;
+            width: 35%;
+        }
+
+        .desktop-menu .nav-links.left-links {
+            justify-content: flex-end;
+        }
+
+        .desktop-menu .nav-links.right-links {
+            justify-content: flex-start;
+        }
+
+        .desktop-menu .nav-links a {
+            color: #d8d8d8;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            transition: 0.3s ease;
+            position: relative;
+        }
+
+        .desktop-menu .nav-links a:focus-visible {
+            outline: none;
+            outline-offset: none;
+        }
+
+        .desktop-menu .nav-links a:hover,
+        .desktop-menu .nav-links a.active {
+            color: #F42903;
+        }
+
+
+
+        .desktop-menu .nav-links a:hover::after,
+        .desktop-menu .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* CENTER LOGO */
+        .navbar-logo {
+            width: 30%;
+            text-align: center;
+        }
+
+        .navbar-logo img {
+            width: 130px;
+        }
+
+        /* ================= MOBILE ================= */
+        .mobile-navbar {
             display: none;
         }
 
-        .mobile-navbar {
-            display: block;
+        .mobile-navbar .mobile-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-    }
+
+        .mobile-navbar .navbar-logo img {
+            width: 120px;
+        }
+
+        .navbar-toggler {
+            border: none;
+            box-shadow: none !important;
+            padding: 0;
+        }
+
+        .custom-toggler {
+            width: 26px;
+            height: 20px;
+            position: relative;
+        }
+
+        .custom-toggler span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            border-radius: 20px;
+        }
+
+        .custom-toggler span:nth-child(1) {
+            top: 0;
+        }
+
+        .custom-toggler span:nth-child(2) {
+            top: 9px;
+        }
+
+        .custom-toggler span:nth-child(3) {
+            bottom: 0;
+        }
+
+        .mobile-menu-links {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .mobile-menu-links a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 0;
+        }
+
+        /* ================= ONLY MOBILE BELOW 576 ================= */
+        @media (max-width:576px) {
+
+            .desktop-menu {
+                display: none;
+            }
+
+            .mobile-navbar {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -168,80 +169,79 @@
 
     </div>
     <!-- ================= NAVBAR ================= -->
-<!-- ================= NAVBAR ================= -->
-<nav class="custom-navbar">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="custom-navbar">
 
-    <div class="container px-lg-5 px-3">
+        <div class="container px-lg-5 px-3">
 
-        <!-- ================= DESKTOP NAVBAR ================= -->
-        <div class="desktop-menu">
+            <!-- ================= DESKTOP NAVBAR ================= -->
+            <div class="desktop-menu">
 
-            <!-- LEFT LINKS -->
-            <div class="nav-links left-links" data-aos="fade-right">
-                <a href="index.html" class="active">मुखपृष्ठ</a>
-                <a href="#">परिचय</a>
-            </div>
+                <!-- LEFT LINKS -->
+                <div class="nav-links left-links" data-aos="fade-right">
+                    <a href="index.html" class="active">मुख्यपृष्ठ</a>
+                    <a href="#">परिचय</a>
+                </div>
 
-            <!-- CENTER LOGO -->
-            <div class="navbar-logo" data-aos="fade-up">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="logo" class="img-fluid">
-                </a>
-            </div>
-
-            <!-- RIGHT LINKS -->
-            <div class="nav-links right-links" data-aos="fade-left">
-                <a href="#">सहयोग</a>
-                <a href="#">सेवाएँ</a>
-            </div>
-
-        </div>
-
-        <!-- ================= MOBILE NAVBAR ================= -->
-        <div class="mobile-navbar">
-
-            <!-- TOP -->
-            <div class="mobile-top">
-
-                <!-- LEFT LOGO -->
-                <div class="navbar-logo text-start">
+                <!-- CENTER LOGO -->
+                <div class="navbar-logo" data-aos="fade-up">
                     <a href="index.html">
                         <img src="assets/images/logo.png" alt="logo" class="img-fluid">
                     </a>
                 </div>
 
-                <!-- RIGHT TOGGLE -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#mobileMenu">
-
-                    <div class="custom-toggler">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                </button>
+                <!-- RIGHT LINKS -->
+                <div class="nav-links right-links" data-aos="fade-left">
+                    <a href="#">सेवाएं</a>
+                    <a href="#">सहयोग</a>
+                </div>
 
             </div>
 
-            <!-- MOBILE MENU -->
-            <div class="collapse" id="mobileMenu">
+            <!-- ================= MOBILE NAVBAR ================= -->
+            <div class="mobile-navbar">
 
-                <div class="mobile-menu-links">
-                    <a href="#">मुखपृष्ठ</a>
-                    <a href="#">परिचय</a>
-                    <a href="#">सहयोग</a>
-                    <a href="#">सेवाएँ</a>
+                <!-- TOP -->
+                <div class="mobile-top">
+
+                    <!-- LEFT LOGO -->
+                    <div class="navbar-logo text-start">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <!-- RIGHT TOGGLE -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+
+                        <div class="custom-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </button>
+
+                </div>
+
+                <!-- MOBILE MENU -->
+                <div class="collapse" id="mobileMenu">
+
+                    <div class="mobile-menu-links">
+                        <a href="index.html">मुख्यपृष्ठ</a>
+                        <a href="#">परिचय</a>
+                        <a href="#">सेवाएं</a>
+                        <a href="#">सहयोग</a>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
+    </nav>
 
-</nav>
-   
 
     <!-- Banner Section -->
     <section class="banner-section">
@@ -300,7 +300,7 @@
                     <img src="assets/images/Group-3.png" alt="heading-image" class="img-fluid tym-heading-img">
                 </h2>
                 <p>
-                    विधि, ध्वनि और रूप – तीन शक्तियाँ, एक मार्ग
+                    विधि, ध्वनि और रूप - तीन शक्तियाँ, एक मार्ग
                 </p>
 
             </div>
@@ -315,9 +315,9 @@
                             <h3><img src="assets/images/Group-1.png" alt="image" class="img-fluid w-50"></h3>
 
                             <p>
-                                तंत्र न कोई रहस्य है, न कोई भय की विधा। यह उस शक्ति की समझ
-                                और जीवन में उतारने का मार्ग है। जीवन का हर अनुभव, सुख हो
-                                या दुख, परिवार हो या एकांत, सब साधना है।
+                                तंत्र न कोई रहस्य है, न कोई भय की विद्या। यह इस सृष्टि की समग्र शक्ति को समझने और जीवन
+                                में उतारने का मार्ग है। जीवन का हर अनुभव, सुख हो या दुख, परिवार हो या एकांत, सब साधना
+                                है।
                             </p>
 
                         </div>
@@ -334,10 +334,9 @@
                         <div class="tmy-content-box">
                             <h3><img src="assets/images/Group-2.png" alt="image" class="img-fluid"></h3>
                             <p>
-                                मंत्र वह दिव्य ध्वनि है जो श्वास के आरंभ से विद्यमान है।
-                                प्रत्येक मंत्र एक विशेष शक्ति का वाहक है। जब इसे सही
-                                विधि, सही भाव और सही समय पर उच्चारित किया जाता है,
-                                यह जीवन को बदलने की क्षमता रखता है।
+                                मंत्र वह दिव्य ध्वनि है जो सृष्टि के आरंभ से विद्यमान है। प्रत्येक मंत्र एक विशेष शक्ति
+                                का वाहक है। जब इसे सही विधि, सही भाव और सही समय पर उच्चारित किया जाए तो यह जीवन को बदलने
+                                की क्षमता रखता है।
                             </p>
                         </div>
                     </div>
@@ -347,11 +346,10 @@
                         <div class="tmy-content-box">
                             <h3><img src="assets/images/Group-3.png" alt="image" class="img-fluid"></h3>
                             <p>
-                                यंत्र एक पवित्र ज्यामितीय संरचना है जिसमें देवी-देवताओं
-                                की शक्ति को संचित किया जाता है। यह केवल एक चित्र नहीं,
-                                यह एक जीवंत ऊर्जा केंद्र है। घर में, व्यापार में और
-                                जीवन के हर क्षेत्र में यंत्र एक अदृश्य सुरक्षा कवच
-                                का कार्य करता है।
+                                यंत्र एक पवित्र ज्यामितीय संरचना है जिसमें देवी-देवताओं की शक्ति को आह्वान किया जाता है।
+                                यह केवल एक चित्र नहीं, यह एक जीवंत ऊर्जा केंद्र है। घर में, व्यापार में और जीवन के हर
+                                क्षेत्र में यंत्र एक
+                                अदृश्य सुरक्षा कवच का कार्य करता है।
                             </p>
                         </div>
                         <div class="tmy-circle">
@@ -387,7 +385,7 @@
 
                 <form class="donation-form">
 
-                    <input type="text" placeholder="धाराशि (₹)" class="form-control donation-input">
+                    <input type="text" placeholder="धनराशि (₹)" class="form-control donation-input">
 
                     <button type="submit" class="donation-btn">
                         दान करें
@@ -402,9 +400,8 @@
                 data-aos-delay="200">
 
                 <p>
-                    दान केवल धन नहीं - यह आपकी श्रद्धा का प्रतीक है। जब आप काली कुलम में
-                    अर्पण करते हैं, तो आप केवल एक संस्था को नहीं, बल्कि एक जीवंत साधना
-                    परंपरा को जीवित रखते हैं।
+                    दान केवल धन नहीं - यह आपकी श्रद्धा का प्रतीक है। जब आप काली कुलम में अर्पण करते हैं, तो आप केवल एक
+                    संस्था को नहीं, बल्कि एक जीवंत साधना परंपरा को जीवित रखते हैं।
                 </p>
 
             </div>
@@ -442,16 +439,17 @@
 
                                     <div class="bg-dark rounded p-3">
                                         <p>
-                                            काली कुलम में 'काली' का अर्थ है स्त्री और 'कुलम' का अर्थ है धारणा -
-                                            अर्थात स्त्री शक्ति का कुल।
+                                            काली कुलम में 'काली' का अर्थ है स्त्री और 'कुलम' का अर्थ है घराना - अर्थात्
+                                            स्त्री शक्ति का कुल।
                                         </p>
                                         <p>
-                                            यह एक ऐसी आध्यात्मिक और सामाजिक संस्था है जो माँ काली की
-                                            असीम ऊर्जा, करुणा और न्याय के सिद्धांतों पर आधारित है।
+                                            यह एक ऐसी आध्यात्मिक और सामाजिक संस्था है जो माँ काली की असीम ऊर्जा, करुणा
+                                            और न्याय के सिद्धांतों पर आधारित है। हमारा उद्देश्य केवल धार्मिक अनुष्ठान
+                                            नहीं - बल्कि मानवता के भीतर छिपी शक्ति को जागृत करना है।
                                         </p>
                                         <p>
-                                            काली कुलम वह स्थान है जहाँ जाति, पंथ या भेदभाव का कोई स्थान नहीं -
-                                            केवल प्रेम, भक्ति और निस्वार्थ सेवा।
+                                            काली कुलम वह स्थान है जहाँ जाति, पंथ या भेदभाव का कोई स्थान नहीं - केवल
+                                            प्रेम, भक्ति और निःस्वार्थ सेवा।
                                         </p>
                                     </div>
 
@@ -477,8 +475,13 @@
                             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
 
                                 <div class="accordion-body text-secondary">
-                                    आज के समय में मानसिक शांति, आत्मबल और आध्यात्मिक मार्गदर्शन की
-                                    आवश्यकता पहले से अधिक है।
+                                    <div class="bg-dark rounded p-3">
+                                        <p>आज का मनुष्य बाहर से सशक्त और भीतर से रिक्त है। भौतिक सुख है, पर शांति नहीं।
+                                            सफलता है, पर संतोष नहीं। परिवार है, पर जुड़ाव नहीं। काली कुलम उस रिक्तता को
+                                            भरने का प्रयास है — सही मार्गदर्शन, सच्ची साधना और एक जीवंत परंपरा के माध्यम
+                                            से। यहाँ न कोई आडंबर है, न दिखावा — केवल शुद्ध साधना और सच्चा मार्ग।</p>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -502,10 +505,20 @@
                             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
 
                                 <div class="accordion-body text-secondary">
-                                    गुरु साधना का मार्ग सरल और सुरक्षित बनाते हैं।
-                                </div>
+                                    <div class="bg-dark rounded p-3">
+                                        <p>
+                                            बिना गुरु के साधना वैसी है जैसे बिना नाविक के नाव — दिशा तो होगी, पर किनारा
+                                            नहीं मिलेगा। मंत्र पुस्तक में मिल सकता है, यंत्र बाज़ार में मिल सकता है — पर
+                                            शक्ति केवल गुरु से मिलती है। गुरु वह दीपक है जो अपनी लौ से दूसरे दीपक को
+                                            जलाता है। बिना इस दीप-दीक्षा के साधना अधूरी रहती है।
+                                        </p>
+                                    </div>
 
+                                </div>
                             </div>
+
+
+
                         </div>
                         <!-- Item 4 -->
                         <div class="accordion-item bg-black border-bottom border-secondary">
@@ -514,7 +527,7 @@
                                 <button class="accordion-button collapsed bg-black text-white shadow-none  "
                                     type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
 
-                                    4. क्या बिना गुरु के साधना संभव है?
+                                    4. काली कुलम से जुड़ने के बाद जीवन में क्या बदलाव आएगा?
 
                                     <i class="fa-solid fa-chevron-down ms-auto faq-icon"></i>
 
@@ -525,9 +538,16 @@
                             <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
 
                                 <div class="accordion-body text-secondary">
-                                    गुरु साधना का मार्ग सरल और सुरक्षित बनाते हैं।
-                                </div>
+                                    <div class="bg-dark rounded p-3">
+                                        <p>
+                                            मन को दिशा मिलेगी, जीवन को अर्थ मिलेगा। परिवार में सौहार्द आएगा, भीतर
+                                            शांति आएगी। भय, नकारात्मकता और जीवन की बाधाएँ धीरे-धीरे दूर होंगी।
+                                            गृहस्थ जीवन की दुविधाएँ सुलझेंगी और माँ काली की कृपा से जीवन के हर
+                                            क्षेत्र में स्पष्टता और आत्मविश्वास आएगा।
+                                        </p>
+                                    </div>
 
+                                </div>
                             </div>
                         </div>
                         <!-- Item 5 -->
@@ -537,7 +557,7 @@
                                 <button class="accordion-button collapsed bg-black text-white shadow-none  "
                                     type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
 
-                                    5. क्या बिना गुरु के साधना संभव है?
+                                    5. क्या तंत्र साधना केवल विशेष लोगों के लिए है?
 
                                     <i class="fa-solid fa-chevron-down ms-auto faq-icon"></i>
 
@@ -548,18 +568,25 @@
                             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
 
                                 <div class="accordion-body text-secondary">
-                                    गुरु साधना का मार्ग सरल और सुरक्षित बनाते हैं।
+                                    <div class="bg-dark rounded p-3">
+                                        <p>
+                                            तंत्र किसी एक वर्ग, जाति या पंथ की विद्या नहीं — यह जीवन की विद्या है। जो
+                                            साँस
+                                            लेता है, जो अनुभव करता है, जो जीना चाहता है — तंत्र उसी के लिए है। काली कुलम
+                                            में
+                                            गृहस्थ भी साधक है, स्त्री भी साधक है, युवा भी साधक है। यहाँ केवल एक योग्यता
+                                            है —
+                                            सच्ची जिज्ञासा।
+                                        </p>
+                                    </div>
                                 </div>
 
                             </div>
                         </div>
-
                     </div>
+
+
                 </div>
-            </div>
-
-
-        </div>
     </section>
     <footer class="kali-footer">
 
@@ -583,8 +610,7 @@
                     <div class="footer-contact mt-5">
 
                         <p>
-                            पता: F-1/143, ब्लॉक F, सेक्टर 16F,<br>
-                            रोहिणी, दिल्ली - 110089
+                            पता: F1/145, सेक्टर 16, रोहिणी, <br>दिल्ली - 110089
                         </p>
 
                         <a href="mailto:support@kalikulam.org">
@@ -603,10 +629,10 @@
                         <div class="col-6">
 
                             <ul class="footer-links list-unstyled">
-                                <li><a href="#">मुखपृष्ठ</a></li>
+                                <li><a href="#">मुख्यपृष्ठ</a></li>
                                 <li><a href="#">परिचय</a></li>
                                 <li><a href="#">दर्शन</a></li>
-                                <li><a href="#">सेवाएँ</a></li>
+                                <li><a href="#">सेवाएं</a></li>
                                 <li><a href="#">अनुसंधान</a></li>
                                 <li><a href="#">दीक्षा</a></li>
                                 <li><a href="#">संकल्प</a></li>
@@ -619,7 +645,7 @@
                             <ul class="footer-links list-unstyled">
                                 <li><a href="#">सत्संग</a></li>
                                 <li><a href="#">सहयोग</a></li>
-                                <li><a href="#">प्रश्नगण</a></li>
+                                <li><a href="#">गुरुवाणी</a></li>
                                 <li><a href="#">संपर्क</a></li>
                             </ul>
 

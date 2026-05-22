@@ -1,7 +1,8 @@
 /* =========================================
    Global & Top Bar CSS Start
    ========================================= */
-body, html {
+body,
+html {
     background-color: #000;
     color: #fff;
     margin: 0;
@@ -12,7 +13,9 @@ body, html {
 }
 
 /* Fix AOS horizontal scroll issue without breaking sticky navbar */
-section, footer, .top-bar {
+section,
+footer,
+.top-bar {
     overflow-x: clip;
 }
 
@@ -328,12 +331,27 @@ section, footer, .top-bar {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 30px;
-    letter-spacing: 1px;
-     background: linear-gradient(
-        90deg,
-        hsla(31, 74%, 70%, 1) 0%,
-        hsla(31, 54%, 38%, 1) 100%
-    );
+    /* letter-spacing: 1px; */
+    background: linear-gradient(90deg,
+            hsla(31, 74%, 70%, 1) 0%,
+            hsla(31, 54%, 38%, 1) 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.3;
+    display: inline-block;
+}
+
+.about-title-2 {
+    /* color: #d4af37; */
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* letter-spacing: 1px; */
+    background: linear-gradient(90deg,
+            hsla(31, 74%, 70%, 1) 0%,
+            hsla(31, 54%, 38%, 1) 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -343,7 +361,7 @@ section, footer, .top-bar {
 }
 
 .about-section .about-description {
-    color: #cccccc;
+    color: #fff;
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 25px;
@@ -377,6 +395,11 @@ section, footer, .top-bar {
     height: auto;
     display: block;
     border-radius: 5px;
+}
+
+.about-section .about-page-2 {
+    width: 75% !important;
+    margin: 0 auto !important;
 }
 
 /* =========================================
@@ -715,12 +738,14 @@ section, footer, .top-bar {
 }
 
 @media(max-width:767px) {
-.banner-section{
+    .banner-section {
         min-height: 60vw;
     }
-    .tiny-row-first{
+
+    .tiny-row-first {
         flex-direction: column-reverse;
     }
+
     .donation-section {
         padding: 70px 0;
     }
@@ -841,7 +866,7 @@ section, footer, .top-bar {
 /* CLOSED STATE */
 .faq-section .accordion-button.collapsed {
     color: #fff !important;
-    
+
 }
 
 /* REMOVE BOOTSTRAP BG */
@@ -883,10 +908,11 @@ section, footer, .top-bar {
     ========================== */
 
 .kali-footer {
-    background: #f52700;
+    background: #F42903;
     position: relative;
     overflow: hidden;
-    padding-bottom: 60px; /* Prevent overlap with bottom bar */
+    padding-bottom: 60px;
+    /* Prevent overlap with bottom bar */
 }
 
 /* TOP BLACK AREA */
@@ -984,7 +1010,8 @@ section, footer, .top-bar {
     padding: 10px 15px;
     font-size: 18px;
     font-weight: 400;
-    position: absolute; /* Changed from fixed to avoid mobile overlap */
+    position: absolute;
+    /* Changed from fixed to avoid mobile overlap */
     bottom: 0;
     width: 100%;
 }
@@ -1084,7 +1111,8 @@ section, footer, .top-bar {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000; /* Pure black */
+    background-color: #000000;
+    /* Pure black */
     z-index: 9999;
     display: flex;
     align-items: center;
@@ -1124,11 +1152,176 @@ section, footer, .top-bar {
         transform: scale(0.85) rotate(360deg);
     }
 }
+
 /* =========================================
    Preloader CSS End
    ========================================= */
 
-   .logo-placeholder img{
+.logo-placeholder img {
     width: 60%;
 
-   }
+}
+
+.about-title-2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* letter-spacing: 1px; */
+    background: linear-gradient(90deg,
+            hsla(31, 74%, 70%, 1) 0%,
+            hsla(31, 54%, 38%, 1) 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.pari-chai-section {
+    padding: 0 50px;
+}
+
+.pari-chai-section p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.pari-chai-section .about-list {
+    padding-left: 20px;
+}
+
+.pari-chai-section .about-list li {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.about-section-2 {
+    background-color: #000;
+    padding: 50px 0;
+}
+
+.about-section-2 .about-description {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.about-section-2 .about-title-2 img {
+    width: 60% !important;
+}
+
+.about-section-2 .about-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0px;
+    margin-top: 30px;
+    padding: 0 50px;
+
+}
+
+.about-section-2 .about-card .about-card-img {
+    width: 20%;
+}
+
+.about-section-2 .about-card .about-card-img img {
+    width: 75%;
+    object-fit: contain;
+}
+
+.about-section-2 .about-card .about-card-content {
+    width: 80%;
+}
+
+.about-section-2 .about-card .about-card-content h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.about-section-2 .about-card .about-card-content p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.donate-slider-section {
+    padding: 50px 0;
+}
+
+.donate-slider-section .donate-card {
+    position: relative;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.donate-slider-section .donate-card .donate-card-img {
+    width: 160px !important;
+    height: 160px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.donate-slider-section .donate-card .donate-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+}
+
+
+.donate-slider-section .donate-card .donate-card-text {
+    margin-top: 25px;
+
+}
+
+.donate-slider-section .donate-card .donate-card-text .donate-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.8;
+
+    background: linear-gradient(90deg,
+            #EBB57C 0%,
+            #94622C 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.donate-slider-section .donate-card .donate-card-text .donate-card-location {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 0px;
+}
+
+.donate-slider-section .donate-card .donate-card-img .border-card {
+    position: absolute;
+    transform: translate(5%, 3%);
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+}
+.donate-slider .slick-slide {
+    margin: 0 25px;
+}
+
+.donate-slider .slick-list {
+    margin: 0 -12px;
+}

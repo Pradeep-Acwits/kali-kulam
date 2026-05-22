@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>काली कुलम -परिचय</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <style>
+        /* DESKTOP MENU */
+        .desktop-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .desktop-menu .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 90px;
+            width: 35%;
+        }
+
+        .desktop-menu .nav-links.left-links {
+            justify-content: flex-end;
+        }
+
+        .desktop-menu .nav-links.right-links {
+            justify-content: flex-start;
+        }
+
+        .desktop-menu .nav-links a {
+            color: #d8d8d8;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            transition: 0.3s ease;
+            position: relative;
+        }
+
+        .desktop-menu .nav-links a:focus-visible {
+            outline: none;
+            outline-offset: none;
+        }
+
+        .desktop-menu .nav-links a:hover,
+        .desktop-menu .nav-links a.active {
+            color: #F42903;
+        }
+
+
+
+        .desktop-menu .nav-links a:hover::after,
+        .desktop-menu .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* CENTER LOGO */
+        .navbar-logo {
+            width: 30%;
+            text-align: center;
+        }
+
+        .navbar-logo img {
+            width: 130px;
+        }
+
+        /* ================= MOBILE ================= */
+        .mobile-navbar {
+            display: none;
+        }
+
+        .mobile-navbar .mobile-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mobile-navbar .navbar-logo img {
+            width: 120px;
+        }
+
+        .navbar-toggler {
+            border: none;
+            box-shadow: none !important;
+            padding: 0;
+        }
+
+        .custom-toggler {
+            width: 26px;
+            height: 20px;
+            position: relative;
+        }
+
+        .custom-toggler span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            border-radius: 20px;
+        }
+
+        .custom-toggler span:nth-child(1) {
+            top: 0;
+        }
+
+        .custom-toggler span:nth-child(2) {
+            top: 9px;
+        }
+
+        .custom-toggler span:nth-child(3) {
+            bottom: 0;
+        }
+
+        .mobile-menu-links {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .mobile-menu-links a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 0;
+        }
+
+        /* ================= ONLY MOBILE BELOW 576 ================= */
+        @media (max-width:576px) {
+
+            .desktop-menu {
+                display: none;
+            }
+
+            .mobile-navbar {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo-wrapper">
+            <img src="assets/images/loader.png" alt="logo" class="loader-logo">
+        </div>
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span data-aos="fade-up">|| ॐ कृष्ण काली शनैश्चराय स्वाहा ||</span>
+
+    </div>
+    <!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
+    <nav class="custom-navbar">
+
+        <div class="container px-lg-5 px-3">
+
+            <!-- ================= DESKTOP NAVBAR ================= -->
+            <div class="desktop-menu">
+
+                <!-- LEFT LINKS -->
+                <div class="nav-links left-links" data-aos="fade-right">
+                    <a href="index.html" class="active">मुखपृष्ठ</a>
+                    <a href="about.html">परिचय</a>
+                </div>
+
+                <!-- CENTER LOGO -->
+                <div class="navbar-logo" data-aos="fade-up">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                    </a>
+                </div>
+
+                <!-- RIGHT LINKS -->
+                <div class="nav-links right-links" data-aos="fade-left">
+                    <a href="donation.html">सहयोग</a>
+                    <a href="services.html">सेवाएँ</a>
+                </div>
+
+            </div>
+
+            <!-- ================= MOBILE NAVBAR ================= -->
+            <div class="mobile-navbar">
+
+                <!-- TOP -->
+                <div class="mobile-top">
+
+                    <!-- LEFT LOGO -->
+                    <div class="navbar-logo text-start">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <!-- RIGHT TOGGLE -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+
+                        <div class="custom-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </button>
+
+                </div>
+
+                <!-- MOBILE MENU -->
+                <div class="collapse" id="mobileMenu">
+
+                    <div class="mobile-menu-links">
+                        <a href="#">मुखपृष्ठ</a>
+                        <a href="#">परिचय</a>
+                        <a href="#">सहयोग</a>
+                        <a href="#">सेवाएँ</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <img src="assets/images/about-image/about-banner.png" alt="banner-image" class="img-fluid w-75 gsap-banner ">
+    </section>
+    <section class="pari-chai-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 text-center mb-lg-5 mb-3" data-aos="fade-up" data-aos-duration="1200">
+                    <h2 class="parichay-title">
+                        <img script src="assets/images/about-image/about-heading.png" alt="om" class="img-fluid about-heading-1 ">
+
+                    </h2>
+
+                </div>
+                <div class="col-lg-12 " data-aos="fade-left" data-aos-duration="1200">
+                    <div class="px-lg-5 px-0">
+                        <h2 class="about-title-2 ">धार्मिक एवं सामाजिक संस्था</h2>
+                        <p>काली कुलम :<br>
+                            आदि शक्ति की उस अखंड ऊर्जा से जन्मी संस्था, जो करुणा को शक्ति मानती है और सेवा को साधना।
+                            यहाँ
+                            धर्म केवल अनुष्ठान नहीं, जीवन जीने की कला है। मानवता के भीतर प्रसुप्त शक्ति को जगाना और समाज
+                            में
+                            प्रकाश फैलाना - यही इस कुल का संकल्प है।</p>
+                        <h2 class="about-title-2  mt-lg-3 mt-md-3 mt-3 ">काली कुलम का अर्थ </h2>
+                        <p>'काली' अर्थात् स्त्री - आदि, अनंत, सर्वशक्तिमान।<br>
+                            'कुलम' अर्थात् घराना - एक जीवंत परंपरा, एक पवित्र परिवार।<br>
+                            <b>काली कुलम - स्त्री शक्ति का कुल। </b>
+                        </p>
+                        <p>
+                            इस संस्था की नींव दो अटल स्तंभों पर खड़ी है -
+                        </p>
+                        <div class="row gx-5">
+                            <div class="col-lg-6">
+                                <ol class="about-list">
+                                    <li><b>महिला सम्मान एवं सशक्तिकरण</b> माँ काली स्वयं स्त्री शक्ति की परम प्रतीक हैं।
+                                        उनके नाम पर बना यह कुल प्रत्येक स्त्री के सम्मान, स्वाभिमान और स्वतंत्रता के लिए
+                                        समर्पित है। वह स्त्री जो अपनी शक्ति को पहचाने, अपने अधिकार को जाने और अपने जीवन
+                                        को स्वयं दिशा दे - काली कुलम उसी स्त्री के लिए है।</li>
+
+                                </ol>
+                            </div>
+                            <div class="col-lg-6">
+                                <ol class="about-list">
+                                    <li><b>गृहस्थ जीवन की दुविधाओं</b> का समाधान गृहस्थ जीवन सुंदर है, पर कठिन भी।
+                                        परिवार, समाज और साधना के बीच सेतु बनाना हर गृहस्थ की सबसे गहरी चुनौती है। काली
+                                        कुलम उन सभी के लिए है जो इस दुविधा में खड़े हैं - यहाँ उन्हें मार्ग मिलेगा,
+                                        विश्राम मिलेगा, और एक सच्चा आश्रय मिलेगा। </li>
+
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="row">
+                    <div class="col-12 text-center mb-4" data-aos="fade-up" data-aos-duration="1200">
+                        <h2 class="about-title-2"><img src="assets/images/about-image/about-heading-2.png"
+                                class="img-fluid w-75 about-hedaing-2" alt="heading-image"> </h2>
+                    </div>
+                </div>
+                <!-- Text Content -->
+                <div class="col-lg-7 col-md-6 about-text-col order-lg-1 order-md-1 order-2" data-aos="fade-right" data-aos-duration="1500">
+                    <h4 class="about-subtitle">पूज्य गुरुदेव,</h4>
+                    <h2 class="about-title">मांगीलाल भील</h2>
+
+                    <p class="about-description">
+                        <strong>"गृहस्थो नास्ति मे तुल्यः"</strong> गृहस्थ के समान कोई नहीं।
+                    </p>
+                    <p class="about-description">
+                        माँ शारदा के उपासक, पंचभूतों के साधक - गुरुदेव मांगीलाल भील गृहस्थ हैं, पर संसार से परे हैं।
+                    </p>
+                    <p class="about-description">
+                        मोरड़ी मावली की भूमि पर जल, जंगल और जमीन उनकी साधना के साक्षी हैं।
+                        पृथ्वी, जल, अग्नि, वायु, आकाश - इन पाँच तत्वों को वे जानते नहीं, जीते हैं।
+                        प्रकृति का संरक्षण उनके लिए कोई उद्देश्य नहीं, उनका स्वभाव है।
+                        रसोई हो या पूजा स्थल, खेत हो या ध्यान - गुरुदेव के लिए कोई भेद नहीं।
+                        जो संसार में रहकर साधना करे, वही सच्चा साधक है।
+                    </p>
+                    <p class="about-description">द्राविडाचार्य उनके प्रिय शिष्य हैं - जिन्होंने गुरु की शक्ति को संस्था
+                        का रूप दिया।</p>
+                </div>
+
+                <!-- Image Content -->
+                <div class="col-lg-5 col-md-6 text-center about-img-col order-lg-2 order-md-2 order-1" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="about-image-wrapper">
+                        <!-- Trying .png and .jpg to be safe, you can adjust as needed -->
+                        <img src="assets/images/about-us.png" alt="मांगीलाल भील" class="img-fluid about-img">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-lg-5 mt-md-5 mt-0">
+                <!-- Image Content -->
+                <div class="col-lg-5 col-md-6 text-center about-img-col " data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="about-image-wrapper">
+                        <!-- Trying .png and .jpg to be safe, you can adjust as needed -->
+                        <img src="assets/images/about-image/guru-2.png" alt="मांगीलाल भील"
+                            class="img-fluid about-img about-page-2 ">
+                    </div>
+                </div>
+                <!-- Text Content -->
+                <div class="col-lg-7 col-md-6 about-text-col " data-aos="fade-right" data-aos-duration="1500">
+                    <h4 class="about-subtitle">संस्थापक,</h4>
+                    <h2 class="about-title">रुद्राक्षकिंग (द्रविड़ाचार्य)</h2>
+
+                    <p class="about-description">
+                        <strong>"विद्या ददाति विनयं विनयाद् याति पात्रताम्"</strong>
+                    </p>
+                    <p class="about-description">
+                        पूज्य गुरुदेव के सानिध्य में जो साधना की, वही साधना आज काली
+                        कुलम का स्वरूप हैं ।
+                    </p>
+                    <p class="about-description">
+                        30 वर्षों से माँ त्रिपुर सुंदरी की उपासना में लीन, गृहस्थ जीवन में रहते
+                        हुए साधना की उच्चतम अवस्था को जीने वाले द्राविडाचार्य केवल एक
+                        साधक नहीं - एक सम्पूर्ण विद्यापीठ हैं।
+                    </p>
+                    <p class="about-description">
+                        रुद्राक्ष विद्या में पीएचडी, दस महाविद्याओं के ज्ञाता और यंत्र निर्माण में
+                        श्रेष्ठ। कोकशास्त्र, कामशास्त्र, वास्तु, ज्योतिष, रसायन और भौतिक
+                        शास्त्र - इन समस्त विद्याओं के गहन अध्येता। वे जीवन को खंडों में
+                        नहीं, समग्रता में देखते हैं।
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="about-section-2 ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="1200">
+                    <h2 class="about-title-2"><img src="assets/images/about-image/about-heading-3.png"
+                            class="img-fluid " alt="heading-image"> </h2>
+                </div>
+                <!-- Image Content -->
+                <div class="col-lg-3 col-md-4 text-center" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/about-image/about-img-2.png" alt="icon"
+                            class="img-fluid about-page-2 w-50 ">
+                    </div>
+                </div>
+                <!-- Text Content -->
+                <div class="col-lg-9 col-md-8 about-text-col" data-aos="fade-right" data-aos-duration="1500">
+                    <h2 class="about-title-2 ">स्थापना </h2>
+                    <p class="about-description">
+                        2025 - काली कुलम की स्थापनाएक संकल्प, एक परंपरा, एक परिवार।
+                    </p>
+                    <h2 class="about-title-2 mt-lg-5 mt-3 ">दृष्टिकोण</h2>
+                    <p class="about-description pe-lg-5">
+                        हम उस समाज की कल्पना करते हैं जहाँ हर व्यक्ति मानसिक, आध्यात्मिक और सामाजिक रूप से सशक्त हो।
+                        काली कुलम वह आँगन है जहाँ जाति, पंथ और भेद की कोई दीवार नहीं - केवल प्रेम है, भक्ति है, और
+                        निःस्वार्थ सेवा का भाव है।
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="row gx-5 justify-content-center ">
+                <div class="col-lg-12 mt-lg-5 mt-md-5 mt-3 text-left px-lg-5 px-3" data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="about-title-2 ">मुख्य आधार</h2>
+                </div>
+                <div class="col-lg-6 col-md-6 px-lg-5 px-0" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="about-card">
+                        <div class="about-card-img">
+                            <img src="assets/images/about-image/about-icon-1.png" alt="vision"
+                                class="img-fluid about-card-icon">
+                        </div>
+                        <div class="about-card-content">
+                            <h3 class="about-card-title">आध्यात्मिक चेतना </h3>
+                            <p>साधकों को प्राचीन तंत्र-मंत्र और ध्यान की गहन शिक्षा देकर उन्हें आत्म-सम्मान और आत्म-बोध
+                                के मार्ग पर अग्रसर करना।</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 px-lg-5 px-0" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="about-card">
+                        <div class="about-card-img">
+                            <img src="assets/images/about-image/about-icon-2.png" alt="vision"
+                                class="img-fluid about-card-icon">
+                        </div>
+                        <div class="about-card-content">
+                            <h3 class="about-card-title">महिला सशक्तिकरण</h3>
+                            <p>
+                                माँ काली की शक्ति के प्रतीक स्वरूप - प्रत्येक स्त्री को स्वावलंबी, साहसी और आत्मविश्वासी
+                                बनाना । क्योंकि जब स्त्री जागती है, तो कुल जागता है। </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 px-lg-5 px-0" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="about-card">
+                        <div class="about-card-img">
+                            <img src="assets/images/about-image/about-icon-3.png" alt="vision"
+                                class="img-fluid about-card-icon">
+                        </div>
+                        <div class="about-card-content">
+                            <h3 class="about-card-title">मानवता की सेवा </h3>
+                            <p>
+                                दीन-दुखियों की सहायता, शिक्षा का प्रसार और स्वास्थ्य सेवाओं के माध्यम से माँ काली के
+                                दिखाये मार्ग पर चलते हुए जन-जन तक पहुँचना।</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 px-lg-5 px-0" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="about-card">
+                        <div class="about-card-img">
+                            <img src="assets/images/about-image/about-icon-4.png" alt="vision"
+                                class="img-fluid about-card-icon">
+                        </div>
+                        <div class="about-card-content">
+                            <h3 class="about-card-title">सांस्कृतिक संरक्षण </h3>
+                            <p>
+                                सनातन परंपराओं, वैदिक ज्ञान और भारतीय संस्कृति की उस अमूल्य धरोहर को नई पीढ़ी तक
+                                पहुँचाना जो सदियों से हमारी पहचान रही है।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="kali-footer">
+
+        <!-- TOP BLACK STRIP -->
+        <div class="footer-top-strip"></div>
+
+        <!-- MAIN FOOTER -->
+        <div class="container">
+
+            <div class="row align-items-start">
+
+                <!-- LEFT -->
+                <div class="col-lg-5 col-md-5 mb-5 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+
+                    <div class="footer-logo-wrap d-flex align-items-center">
+
+                        <img src="assets/images/footer-logo.png" alt="logo" class="img-fluid w-50">
+                    </div>
+
+                    <!-- ADDRESS -->
+                    <div class="footer-contact mt-5">
+
+                        <p>
+                            पता: F-1/143, ब्लॉक F, सेक्टर 16F,<br>
+                            रोहिणी, दिल्ली - 110089
+                        </p>
+
+                        <a href="mailto:support@kalikulam.org">
+                            support@kalikulam.org
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- CENTER LINKS -->
+                <div class=" col-lg-4 col-md-4 mb-5 mb-md-0" data-aos="fade-up" data-aos-duration="1200">
+
+                    <div class="row">
+
+                        <div class="col-6">
+
+                            <ul class="footer-links list-unstyled">
+                                <li><a href="index.html">मुखपृष्ठ</a></li>
+                                <li><a href="about.html">परिचय</a></li>
+                                <li><a href="visits.html">दर्शन</a></li>
+                                <li><a href="services.html">सेवाएँ</a></li>
+                                <li><a href="research.html">अनुसंधान</a></li>
+                                <li><a href="discipleship.html">दीक्षा</a></li>
+                                <li><a href="sankalp.html">संकल्प</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <ul class="footer-links list-unstyled">
+                                <li><a href="satsang.html">सत्संग</a></li>
+                                <li><a href="donation.html">सहयोग</a></li>
+                                <li><a href="faq.html">प्रश्नगण</a></li>
+                                <li><a href="contact.html">संपर्क</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="col-lg-3 col-md-3 text-center text-md-end" data-aos="fade-left" data-aos-duration="1200">
+
+                    <img src="assets/images/footer-img.png" alt="Trishul"
+                        class="img-fluid footer-trishul d-none d-md-inline-block">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+            © 2026 Kali Kulam . All rights reserved.
+        </div>
+
+    </footer>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- GSAP / AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+
+
+
+</body>
+
+</html>

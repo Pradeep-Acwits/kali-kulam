@@ -5,12 +5,14 @@
     .banner-section .bg-text {
         font-size: 15vw;
     }
+
     .banner-section .deity-placeholder {
         width: 250px;
         height: 300px;
     }
-    
+
 }
+
 /* =========================================
    Banner Section Responsive CSS End
    ========================================= */
@@ -44,7 +46,7 @@
     }
 
     .about-section .about-description {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.6;
     }
 
@@ -56,18 +58,114 @@
         width: 100%;
         left: 0;
     }
+   
 }
 
 @media (max-width: 576px) {
     .about-section .about-title {
         font-size: 28px;
     }
-}
-@media (min-width: 577px) and (max-width:1023px){
-    .desktop-menu .nav-links{
-            gap: 0px !Important;
+
+    .tmy-content-box {
+        padding: 20px !important;
+    }
+
+    .about-section {
+        padding: 30px 20px;
+    }
+
+    .donation-section .donation-bottom-content {
+        padding: 0 20px !important;
+    }
+
+    .donation-section .donation-form-wrapper {
+        margin: 0 auto 35px;
+        padding: 0 20px;
+    }
+
+    .faq-heading {
+        width: 60%;
+    }
+
+    .tym-heading-img {
+        width: 20%;
+    }
+
+    .tmy-section .tmy-heading h2 span {
+        font-size: 38px;
+        margin: 0 5px;
+    }
+
+    .about-heading-1 {
+        width: 50%;
+    }
+
+    .pari-chai-section {
+        padding: 30px 20px;
+    }
+
+    .pari-chai-section .about-title-2 {
+        font-size: 28px;
+    }
+
+    .pari-chai-section p {
+        font-size: 17px;
+    }
+
+    .pari-chai-section .about-list li {
+        font-size: 16px;
+    }
+
+    .about-text-col {
+        margin-top: 40px;
+
+    }
+
+    .about-section-2 {
+        padding: 30px 20px;
+    }
+
+    .about-title-2 {
+        font-size: 28px;
+    }
+
+    .about-section-2 .about-title-2 img {
+        width: 90% !important;
+    }
+
+    .about-section-2 .about-description {
+        font-size: 17px;
+    }
+
+    .about-section-2 .about-card .about-card-content p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    .about-section-2 .about-card{
+        padding: 0 20px;
     }
 }
+
+@media (min-width: 577px) and (max-width:1023px) {
+    .desktop-menu .nav-links {
+        gap: 0px !Important;
+    }
+}
+@media (min-width: 577px) and (max-width:991px) {
+     .about-heading-1{
+        width: 35% !important;
+    }
+    .about-hedaing-2{
+        width: 65% !important;
+    }
+    .about-section .about-page-2{
+        width: 100% !important;
+    }
+    .about-section-2 .about-card{
+        padding: 0 30px;
+    }
+}
+
 /* =========================================
    About Section Responsive CSS End
    ========================================= */

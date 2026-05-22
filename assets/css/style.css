@@ -67,7 +67,7 @@ section, footer, .top-bar {
 .top-bar {
     position: relative;
     overflow: hidden;
-    background: #ff3c00;
+    background: #F42903;
     /* background:linear-gradient(135deg,#1a0500,#ff3c00,#1a0500); */
     padding: 5px 20px;
     text-align: center;
@@ -187,7 +187,7 @@ section, footer, .top-bar {
 .custom-navbar {
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(10px);
-    padding: 20px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -203,11 +203,11 @@ section, footer, .top-bar {
 }
 
 .nav-links a:hover {
-    color: #ff3c00;
+    color: #F42903;
 }
 
 .nav-links a.active {
-    color: #ff3c00;
+    color: #F42903;
 }
 
 .mobile-nav-links a {
@@ -218,7 +218,7 @@ section, footer, .top-bar {
 }
 
 .mobile-nav-links a.active {
-    color: #ff3c00;
+    color: #F42903;
 }
 
 /* =========================================
@@ -324,11 +324,22 @@ section, footer, .top-bar {
 }
 
 .about-section .about-title {
-    color: #d4af37;
+    /* color: #d4af37; */
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 30px;
     letter-spacing: 1px;
+     background: linear-gradient(
+        90deg,
+        hsla(31, 74%, 70%, 1) 0%,
+        hsla(31, 54%, 38%, 1) 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    display: inline-block;
 }
 
 .about-section .about-description {
@@ -1083,7 +1094,7 @@ section, footer, .top-bar {
 
 .loader-logo-wrapper {
     position: relative;
-    width: 180px;
+    width: 120px;
     height: auto;
     opacity: 0;
     animation: sadhanaFade 2.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
@@ -1093,22 +1104,24 @@ section, footer, .top-bar {
     width: 100%;
     height: auto;
     display: block;
-    filter: drop-shadow(0 0 20px rgba(255, 60, 0, 0.3)); /* Subtle glow */
+    /* filter: drop-shadow(0 0 20px rgba(255, 60, 0, 0.3));  */
 }
 
 @keyframes sadhanaFade {
     0% {
         opacity: 0.2;
-        transform: scale(0.95);
+        transform: scale(0.85) rotate(0deg);
     }
+
     50% {
         opacity: 1;
-        transform: scale(1.02);
-        filter: drop-shadow(0 0 30px rgba(255, 60, 0, 0.6));
+        transform: scale(1) rotate(180deg);
+        /* filter: drop-shadow(0 0 30px rgba(255, 60, 0, 0.6)); */
     }
+
     100% {
         opacity: 0.2;
-        transform: scale(0.95);
+        transform: scale(0.85) rotate(360deg);
     }
 }
 /* =========================================

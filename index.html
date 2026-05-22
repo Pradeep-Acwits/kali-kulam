@@ -19,6 +19,138 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reponsive.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <style>
+       /* DESKTOP MENU */
+    .desktop-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .desktop-menu .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+        width: 35%;
+    }
+
+    .desktop-menu .nav-links.left-links {
+        justify-content: flex-end;
+    }
+
+    .desktop-menu .nav-links.right-links {
+        justify-content: flex-start;
+    }
+
+    .desktop-menu .nav-links a {
+        color: #d8d8d8;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        transition: 0.3s ease;
+        position: relative;
+    }
+      .desktop-menu .nav-links a:focus-visible{
+        outline: none;
+        outline-offset: none;
+      }
+
+    .desktop-menu .nav-links a:hover,
+    .desktop-menu .nav-links a.active {
+        color: #F42903;
+    }
+
+   
+
+    .desktop-menu .nav-links a:hover::after,
+    .desktop-menu .nav-links a.active::after {
+        width: 100%;
+    }
+
+    /* CENTER LOGO */
+    .navbar-logo {
+        width: 30%;
+        text-align: center;
+    }
+
+    .navbar-logo img {
+        width: 130px;
+    }
+
+    /* ================= MOBILE ================= */
+    .mobile-navbar {
+        display: none;
+    }
+
+    .mobile-navbar .mobile-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-navbar .navbar-logo img {
+        width: 120px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        box-shadow: none !important;
+        padding: 0;
+    }
+
+    .custom-toggler {
+           width: 26px;
+    height: 20px;
+        position: relative;
+    }
+
+    .custom-toggler span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        border-radius: 20px;
+    }
+
+    .custom-toggler span:nth-child(1) {
+        top: 0;
+    }
+
+    .custom-toggler span:nth-child(2) {
+        top: 9px;
+    }
+
+    .custom-toggler span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .mobile-menu-links {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .mobile-menu-links a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 0;
+    }
+
+    /* ================= ONLY MOBILE BELOW 576 ================= */
+    @media (max-width:576px) {
+
+        .desktop-menu {
+            display: none;
+        }
+
+        .mobile-navbar {
+            display: block;
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -26,7 +158,7 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader-logo-wrapper">
-            <img src="assets/images/Logo.png" alt="logo" class="loader-logo">
+            <img src="assets/images/loader.png" alt="logo" class="loader-logo">
         </div>
     </div>
 
@@ -35,35 +167,108 @@
         <span data-aos="fade-up">|| ॐ कृष्ण काली शनैश्चराय स्वाहा ||</span>
 
     </div>
+    <!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR ================= -->
+<nav class="custom-navbar">
 
+    <div class="container px-lg-5 px-3">
+
+        <!-- ================= DESKTOP NAVBAR ================= -->
+        <div class="desktop-menu">
+
+            <!-- LEFT LINKS -->
+            <div class="nav-links left-links" data-aos="fade-right">
+                <a href="#" class="active">मुखपृष्ठ</a>
+                <a href="#">परिचय</a>
+            </div>
+
+            <!-- CENTER LOGO -->
+            <div class="navbar-logo" data-aos="fade-up">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                </a>
+            </div>
+
+            <!-- RIGHT LINKS -->
+            <div class="nav-links right-links" data-aos="fade-left">
+                <a href="#">सहयोग</a>
+                <a href="#">सेवाएँ</a>
+            </div>
+
+        </div>
+
+        <!-- ================= MOBILE NAVBAR ================= -->
+        <div class="mobile-navbar">
+
+            <!-- TOP -->
+            <div class="mobile-top">
+
+                <!-- LEFT LOGO -->
+                <div class="navbar-logo text-start">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+                    </a>
+                </div>
+
+                <!-- RIGHT TOGGLE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mobileMenu">
+
+                    <div class="custom-toggler">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </button>
+
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div class="collapse" id="mobileMenu">
+
+                <div class="mobile-menu-links">
+                    <a href="#">मुखपृष्ठ</a>
+                    <a href="#">परिचय</a>
+                    <a href="#">सहयोग</a>
+                    <a href="#">सेवाएँ</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
     <!-- Navbar Section -->
-    <nav class="custom-navbar">
+    <!-- <nav class="custom-navbar">
         <div class="container-fluid px-lg-4 px-md-5 px-2">
             <div class="row align-items-center w-100 m-0">
 
-                <!-- Left Links -->
+               
                 <div class="col-5 d-none d-md-flex justify-content-end nav-links" data-aos="fade-right">
                     <a href="#" class="active mukta-medium ">मुख्यपृष्ठ</a>
                     <a href="#" class="mukta-medium">परिचय</a>
                 </div>
 
-                <!-- Center Logo -->
+                
                 <div class="col-12 col-md-2 text-center nav-logo-container d-none d-md-block d-lg-block ">
                     <a href="#" class=" text-decoration-none logo-link" data-aos="fade-up">
-                        <!-- Placeholder for Logo Image, you can replace the src -->
+                        
                         <div class="logo-placeholder">
                             <img src="assets/images/Logo.png" alt="logo" class="img-fluid">
                         </div>
                     </a>
                 </div>
 
-                <!-- Right Links -->
+               
                 <div class="col-5 d-none d-md-flex justify-content-start nav-links" data-aos="fade-left">
                     <a href="#">सहयोग</a>
                     <a href="#">सेवाएँ</a>
                 </div>
 
-                <!-- Mobile Menu Toggle (Visible only on small screens) -->
+              
                 <div class="col-12 d-md-none text-center mobile-nav-links d-flex align-items-center">
                     <a href="#" class="active">मुख्यपृष्ठ</a>
                     <a href="#">परिचय</a>
@@ -75,7 +280,7 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Banner Section -->
     <section class="banner-section">
@@ -233,7 +438,8 @@
             </div>
 
             <!-- BOTTOM TEXT -->
-            <div class="donation-bottom-content text-center" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <div class="donation-bottom-content text-center" data-aos="fade-up" data-aos-duration="1200"
+                data-aos-delay="200">
 
                 <p>
                     दान केवल धन नहीं - यह आपकी श्रद्धा का प्रतीक है। जब आप काली कुलम में
@@ -259,8 +465,8 @@
                         <div class="accordion-item bg-black border-bottom border-secondary">
                             <h2 class="accordion-header">
 
-                                <button class="accordion-button bg-black text-white shadow-none  collapsed " type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <button class="accordion-button bg-black text-white shadow-none  collapsed "
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
 
                                     1. काली कुलम क्या है और यह अन्य से अलग क्यों है?
 
@@ -466,7 +672,8 @@
                 <!-- RIGHT IMAGE -->
                 <div class="col-lg-3 col-md-3 text-center text-md-end" data-aos="fade-left" data-aos-duration="1200">
 
-                    <img src="assets/images/footer-img.png" alt="Trishul" class="img-fluid footer-trishul d-none d-md-inline-block">
+                    <img src="assets/images/footer-img.png" alt="Trishul"
+                        class="img-fluid footer-trishul d-none d-md-inline-block">
 
                 </div>
 

@@ -63,6 +63,11 @@
         font-size: 28px;
     }
 }
+@media (min-width: 577px) and (max-width:1023px){
+    .desktop-menu .nav-links{
+            gap: 0px;
+    }
+}
 /* =========================================
    About Section Responsive CSS End
    ========================================= */

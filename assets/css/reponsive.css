@@ -144,6 +144,15 @@
     .about-section-2 .about-card{
         padding: 0 20px;
     }
+    .contact-content{
+                top: 5%;
+                        left: 5%;
+                transform: none;
+                padding: 0 20px;
+    }
+    .contact-content img{
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 577px) and (max-width:1023px) {
@@ -164,8 +173,23 @@
     .about-section-2 .about-card{
         padding: 0 30px;
     }
+    .contact-frm{
+        max-width: 500px !important;
+    }
+    .contact-section{
+        padding-bottom: 450px;
+    }
+    .contact-frm{
+            top: 18%;
+    }
 }
 
 /* =========================================
    About Section Responsive CSS End
    ========================================= */
+   @media (min-width: 991px) and (max-width:1200px) {
+
+    .contact-section{
+        padding-bottom: 450px;
+    }
+   }

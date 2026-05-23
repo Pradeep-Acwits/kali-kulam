@@ -1346,17 +1346,20 @@ footer,
 .donate-slider-2 .slick-track {
     display: flex;
     align-items: center;
-}/* =========================
+}
+
+/* =========================
    CONTACT SECTION
 ========================= */
 
-.contact-section{
+.contact-section {
     position: relative;
-    padding-bottom: 350px; /* footer overlap fix */
+    padding-bottom: 350px;
+    /* footer overlap fix */
     background: #000;
 }
 
-.contact-banner img{
+.contact-banner img {
     width: 100%;
     /* min-height: 700px; */
     object-fit: cover;
@@ -1367,7 +1370,7 @@ footer,
    HEADING
 ========================= */
 
-.contact-content{
+.contact-content {
     position: absolute;
     top: 8%;
     left: 60%;
@@ -1376,7 +1379,7 @@ footer,
     text-align: center;
 }
 
-.contact-content img{
+.contact-content img {
     max-width: 500px;
 }
 
@@ -1384,26 +1387,23 @@ footer,
    FORM BOX
 ========================= */
 
-.contact-frm{
-       position: absolute;
+.contact-frm {
+    position: absolute;
     top: 25%;
     left: 61%;
     transform: translateX(-50%);
     z-index: 3;
     width: 100%;
     max-width: 600px;
-    background: #d59d61;
-    padding: 40px;
-
-    background: #d59d61;
-
+    /* background: #d59d61; */
+    background: linear-gradient(90deg, #EBB57C 0%, #94622C 100%);
     padding: 40px;
 }
 
 /* Text */
 
-.contact-text p{
-color: #754D22;
+.contact-text p {
+    color: #754D22;
     font-size: 28px;
     line-height: 1.6;
     margin-bottom: 30px;
@@ -1414,10 +1414,10 @@ color: #754D22;
    FORM
 ========================= */
 
-.contact-form .form-control{
+.contact-form .form-control {
     height: 45px;
     border-radius: 0;
-    border: 1px solid #754D22;
+    border: 0.095rem solid #754D22;
     background: transparent;
     box-shadow: none;
     color: #6f461d;
@@ -1425,16 +1425,16 @@ color: #754D22;
     font-weight: 500;
 }
 
-.contact-form textarea.form-control{
+.contact-form textarea.form-control {
     height: auto;
     resize: none;
 }
 
-.contact-form .form-control::placeholder{
+.contact-form .form-control::placeholder {
     color: #8a5b2f;
 }
 
-.contact-form .form-control:focus{
+.contact-form .form-control:focus {
     border-color: #6f461d;
     box-shadow: none;
     background: transparent;
@@ -1444,7 +1444,7 @@ color: #754D22;
    BUTTON
 ========================= */
 
-.contact-btn{
+.contact-btn {
     background: #754D22;
     color: #fff;
     border: none;
@@ -1454,8 +1454,8 @@ color: #754D22;
     width: 100%;
 }
 
-.contact-btn:hover{
-   
+.contact-btn:hover {
+
     opacity: 0.8;
 }
 
@@ -1463,52 +1463,62 @@ color: #754D22;
    RESPONSIVE
 ========================= */
 
-@media(max-width:991px){
+@media(max-width:991px) {
 
-    .contact-section{
-        padding-bottom: 80px;
+    .contact-section {
+        padding-bottom: 400px;
     }
 
     /* .contact-banner img{
         min-height: 500px;
     } */
 
-    .contact-content{
+    .contact-content {
         top: 5%;
         width: 90%;
-    };
-
-    .contact-content img{
-        max-width: 320px;
     }
 
-    .contact-frm{
-        position: relative;
-        top: -80px;
-        left: 0;
-        transform: unset;
+    ;
 
+    /* .contact-content img{
+        max-width: 320px;
+    } */
+
+    .contact-frm {
+        position: relative;
+        top: 20%;
+        left: 60%;
+        transform: unset;
         width: calc(100% - 30px);
+        max-width: 500px !important;
         margin: auto;
         padding: 25px;
     }
 
-    .contact-text p{
+    .contact-text p {
         font-size: 20px;
     }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
 
-    .contact-form .row{
+    .contact-form .row {
         flex-direction: column;
     }
 
-    .contact-frm{
-        padding: 20px;
+    .contact-section {
+        padding-bottom: 0px;
     }
 
-    .contact-text p{
+    .contact-frm {
+       position: static;
+        transform: none;
+        max-width: 100%;
+        margin: 80px 20px 30px 20px;
+        width: auto;
+    }
+
+    .contact-text p {
         font-size: 18px;
     }
 }

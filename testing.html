@@ -658,10 +658,49 @@ nav {
   font-weight: 600;
   color: var(--sky);
   transition: gap 0.2s;
+  text-decoration: none;
 }
 
 .sol-card:hover .sol-link {
   gap: 8px;
+}
+
+/* Proof stats inside solution cards */
+.sol-proof {
+  display: flex;
+  gap: 0;
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--off);
+}
+
+.sol-proof-stat {
+  flex: 1;
+  text-align: center;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+}
+
+.sol-proof-stat:last-child {
+  border-right: none;
+}
+
+.sol-proof-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.15rem;
+  color: var(--navy);
+  line-height: 1.1;
+}
+
+.sol-proof-label {
+  font-size: 0.65rem;
+  color: var(--muted);
+  margin-top: 3px;
+  line-height: 1.3;
 }
 
 /* Custom assessments wide card */
@@ -1849,73 +1888,113 @@ footer {
 
     <div class="solutions-grid">
 
+      <!-- 1. TALENT HIRING — Oman LNG -->
       <div class="sol-card">
         <div class="sol-icon">🎯</div>
         <div class="sol-title">Talent Hiring</div>
-        <div class="sol-desc">Predict on-the-job performance using cognitive, behavioral, and situational assessments. Cut mis-hires by up to 70% and reduce time-to-hire with objective, data-driven decisions.</div>
-        <span class="sol-link">Learn more →</span>
+        <div class="sol-desc">High-volume hiring doesn't have to mean compromising on quality. When Oman LNG needed to select just 20 graduate interns from over 3,000 applicants, manual shortlisting was neither feasible nor objective. By deploying Discover's suite of cognitive assessments — verbal reasoning, pattern recognition, and logical reasoning — the top 100 candidates were automatically ranked and shortlisted in under five minutes. The HR team eliminated days of manual screening, achieved a fully bias-free selection process, and walked into interviews with only the highest-calibre candidates in the room.</div>
+        <div class="sol-proof">
+          <div class="sol-proof-stat"><span class="sol-proof-num">3,000+</span><span class="sol-proof-label">Applicants assessed</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">&lt;5 min</span><span class="sol-proof-label">To shortlist top 100</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">100%</span><span class="sol-proof-label">Objective &amp; automated</span></div>
+        </div>
+        <a href="#demo" class="sol-link">Book a demo to see how →</a>
       </div>
 
+      <!-- 2. TALENT DEVELOPMENT — Jindal Stainless -->
       <div class="sol-card">
         <div class="sol-icon">🌱</div>
         <div class="sol-title">Talent Development</div>
-        <div class="sol-desc">Identify skill gaps and create personalized development roadmaps for every employee — from entry-level contributors to senior managers. Build a culture of continuous growth.</div>
-        <span class="sol-link">Learn more →</span>
+        <div class="sol-desc">Without a data-driven baseline, employee development programs often end up generic, costly, and disconnected from actual skill gaps. Jindal Stainless Limited needed to assess 213 corporate employees and create a targeted, year-long development strategy. Using Discover's DISC behavioral assessment, the organization identified employees who needed focused training and — equally valuable — those with strong competency profiles who could serve as internal mentors. The result was a precisely structured development calendar that addressed real gaps, leveraged internal talent, and delivered measurable growth across the workforce.</div>
+        <div class="sol-proof">
+          <div class="sol-proof-stat"><span class="sol-proof-num">213</span><span class="sol-proof-label">Employees assessed</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">2-way</span><span class="sol-proof-label">Learners + mentors identified</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">1 year</span><span class="sol-proof-label">Structured development plan</span></div>
+        </div>
+        <a href="#demo" class="sol-link">Book a demo to see how →</a>
       </div>
 
+      <!-- 3. LEADERSHIP DEVELOPMENT — Coca-Cola -->
       <div class="sol-card">
         <div class="sol-icon">👑</div>
         <div class="sol-title">Leadership Development</div>
-        <div class="sol-desc">Assess and accelerate your leadership pipeline. Understand who is ready now, who is nearly ready, and what each leader needs to reach their full potential.</div>
-        <span class="sol-link">Learn more →</span>
+        <div class="sol-desc">Promoting your top performers without a structured readiness framework is a risk no organization can afford. Coca-Cola Beverages (Al Ahlia &amp; Al Mana) embedded Discover's DISC assessments directly into their performance management cycle to evaluate high-performing sales personnel shortlisted for promotion. Each individual's behavioral tendencies, leadership readiness, and role-specific competency gaps were assessed and reported. Tailored development plans were then created, with progress tracked throughout the year — ensuring that every person who stepped into a leadership role was genuinely prepared to excel in it.</div>
+        <div class="sol-proof">
+          <div class="sol-proof-stat"><span class="sol-proof-num">Annual</span><span class="sol-proof-label">Promotion cycle assessment</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">Role-fit</span><span class="sol-proof-label">Competency alignment</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">0</span><span class="sol-proof-label">Guesswork in promotions</span></div>
+        </div>
+        <a href="#demo" class="sol-link">Book a demo to see how →</a>
       </div>
 
+      <!-- 4. SUCCESSION PLANNING — Shell Oman -->
       <div class="sol-card">
         <div class="sol-icon">🔭</div>
         <div class="sol-title">Succession Planning</div>
-        <div class="sol-desc">Build a future-proof leadership bench with scientific rigor. Identify successors for critical roles, track readiness progress, and eliminate talent risk before it becomes a crisis.</div>
-        <span class="sol-link">Learn more →</span>
+        <div class="sol-desc">When a leading Gulf oil company needed to identify which of its 47 General Manager–level leaders were ready for the next strategic tier, gut feel wasn't going to cut it with the board. Discover designed and executed a comprehensive Succession Readiness Evaluation — combining DISC behavioral profiling, emotional intelligence assessments, cognitive ability tests, 360-degree feedback, business case presentations, and expert panel interviews — into a single composite readiness rating per leader. The findings were packaged into a board-level presentation that gave the C-Suite and HR leadership a clear, evidence-based view of their succession pipeline. Out of 47 leaders assessed, 10 were immediately succession-ready and 13 were near-ready, with targeted development plans created for the rest.</div>
+        <div class="sol-proof">
+          <div class="sol-proof-stat"><span class="sol-proof-num">47</span><span class="sol-proof-label">GM-level leaders assessed</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">10</span><span class="sol-proof-label">Immediately succession-ready</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">Board-ready</span><span class="sol-proof-label">Presentation delivered</span></div>
+        </div>
+        <a href="#demo" class="sol-link">Book a demo to see how →</a>
       </div>
 
+      <!-- 5. 360 FEEDBACK — Benetton -->
       <div class="sol-card">
         <div class="sol-icon">🔄</div>
         <div class="sol-title">360° Feedback</div>
-        <div class="sol-desc">Multi-rater feedback that captures a complete, honest picture of individual performance — from peers, managers, direct reports, and external stakeholders — across any language or geography.</div>
-        <span class="sol-link">Learn more →</span>
+        <div class="sol-desc">Senior leaders often have blind spots they are completely unaware of — and no internal process surfaces them honestly. Benetton India implemented Discover's Leadership 360 Feedback Assessment for 46 of its top personnel, gathering structured input through both self-assessment and peer feedback. Each leader received a personalized report that clearly identified their core strengths, specific challenge areas, and blind spots that were silently impacting their effectiveness. One-on-one debrief sessions translated these insights into concrete, actionable development steps — giving Benetton's leadership team the self-awareness and direction to grow with intention rather than assumption.</div>
+        <div class="sol-proof">
+          <div class="sol-proof-stat"><span class="sol-proof-num">46</span><span class="sol-proof-label">Senior leaders assessed</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">360°</span><span class="sol-proof-label">Self + peer + manager view</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">1-on-1</span><span class="sol-proof-label">Personalized debrief sessions</span></div>
+        </div>
+        <a href="#demo" class="sol-link">Book a demo to see how →</a>
       </div>
 
+      <!-- 6. HIPO IDENTIFICATION — RAK Government -->
       <div class="sol-card">
         <div class="sol-icon">⚡</div>
         <div class="sol-title">High Potential Identification</div>
-        <div class="sol-desc">Scientifically identify HiPo employees early in their career and design targeted acceleration journeys. Stop leaving your future leadership to chance.</div>
-        <span class="sol-link">Learn more →</span>
+        <div class="sol-desc">Identifying high-potential employees without a validated, objective framework means the same people get nominated year after year — based on visibility, not actual potential. The RAK Government's HR department used Discover's DISC behavioral assessment to evaluate 21 employees and benchmarked the results against their own internal HiPo identification tools. Discover matched the internal selections in 20 out of 21 cases — a 95% accuracy rate — validating its scientific rigour and earning organisation-wide adoption across all government departments. The result was a consistent, defensible, and scalable method for identifying and nurturing high-potential talent across the public sector.</div>
+        <div class="sol-proof">
+          <div class="sol-proof-stat"><span class="sol-proof-num">95%</span><span class="sol-proof-label">Match with internal tools</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">All depts</span><span class="sol-proof-label">Organisation-wide adoption</span></div>
+          <div class="sol-proof-stat"><span class="sol-proof-num">Validated</span><span class="sol-proof-label">Scientific rigour confirmed</span></div>
+        </div>
+        <a href="#demo" class="sol-link">Book a demo to see how →</a>
       </div>
 
-      <!-- Wide card -->
+      <!-- 7. CUSTOM ASSESSMENTS — Landmark Group (wide) -->
       <div class="sol-card sol-card-wide">
         <div>
           <div class="sol-icon" style="background: var(--white);">🎨</div>
-          <div class="sol-title" style="font-size:1.15rem;">Custom Assessments</div>
-          <div class="sol-desc">Can't find an exact fit? Our psychometric experts design bespoke assessments mapped to your unique competency framework, culture, industry, and language — delivered in your brand. From design to deployment in weeks, not months.</div>
-          <span class="sol-link" style="font-size:0.9rem; margin-top:20px;">Talk to our experts →</span>
+          <div class="sol-title" style="font-size:1.15rem;">Custom &amp; Enterprise-Scale Assessments</div>
+          <div class="sol-desc" style="font-size:0.9rem;">Some talent challenges don't fit neatly into a single solution — they demand a fully integrated, organisation-wide assessment ecosystem. Landmark Group, the Middle East's leading retail conglomerate, faced exactly this: inconsistent hiring across 6 GCC countries, underdeveloped leadership pipelines, and no unified framework to support its HiPo programs, LDPs, MDPs, or senior 360 feedback. Since 2022, Discover has deployed over 50,000 assessments across all Landmark concepts — Max, Home Centre, Centrepoint, Splash, and more — integrating behavioral profiling for recruitment and internal mobility, 360 leadership assessments for senior leaders, HiPo analytics for acceleration programs, and custom technical assessments for specialized retail roles. The outcome: a centralized, data-rich talent intelligence platform that drives consistent, objective decisions at every level, across every market.</div>
+          <a href="#demo" class="sol-link" style="font-size:0.9rem; margin-top:20px;">Build your enterprise solution →</a>
         </div>
         <div class="custom-steps">
-          <div class="custom-steps-title">Our Custom Assessment Process</div>
+          <div class="custom-steps-title">Landmark Group: Results at a Glance</div>
           <div class="custom-step-item">
-            <span class="step-circle">1</span>
-            Competency mapping workshop with your HR team
+            <span class="step-circle" style="background:var(--gold);color:#fff;">✦</span>
+            <strong>50,000+</strong>&nbsp;assessments delivered since 2022 across 6 GCC countries
           </div>
           <div class="custom-step-item">
-            <span class="step-circle">2</span>
-            Psychometric design, item writing &amp; review
+            <span class="step-circle" style="background:var(--gold);color:#fff;">✦</span>
+            Unified recruitment framework across Max, Home Centre, Home Box, Centrepoint &amp; Splash
           </div>
           <div class="custom-step-item">
-            <span class="step-circle">3</span>
-            Pilot testing, validation &amp; norm setting
+            <span class="step-circle" style="background:var(--gold);color:#fff;">✦</span>
+            HiPo analytics + LDP/MDP DISC profiling for consistent leadership pipeline development
           </div>
           <div class="custom-step-item">
-            <span class="step-circle">4</span>
-            Branded deployment with dashboards &amp; analytics
+            <span class="step-circle" style="background:var(--gold);color:#fff;">✦</span>
+            360 Leadership Assessments for senior leaders across all retail concepts
+          </div>
+          <div class="custom-step-item">
+            <span class="step-circle" style="background:var(--gold);color:#fff;">✦</span>
+            Custom technical assessments for logistics, store ops &amp; visual merchandising roles
           </div>
         </div>
       </div>
